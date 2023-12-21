@@ -70,8 +70,7 @@ return (
  id="JotFormIFrame"
  title="Appointment Request Form"
  onLoad={() => window.parent.scrollTo(0, 0)}
- allowtransparency="true"
- allowfullscreen="true"
+	
  allow="geolocation; microphone; camera"
  src="https://woocommerce-1184222-4160210.cloudwaysapps.com/form/"
  frameBorder="0"
