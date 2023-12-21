@@ -24,6 +24,10 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 import robot2 from "./robot.png";
+import rose from "./rose.svg";
+import person from "./person.svg";
+import homeshope from "./homeShope.svg";
+import logoWhite from "./logowhite.svg"
 
 export {
   airbnb,
@@ -51,5 +55,9 @@ export {
   people01,
   people02,
   people03,
-  robot2
+  robot2,
+  rose,
+  person,
+  homeshope,
+  logoWhite
 };

@@ -4,7 +4,7 @@ import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const Billing = () => (
+const DownloadApp = () => (
   <section id="product" className="sectionReverse">
     <motion.div
       className="sectionImgReverse"
@@ -35,11 +35,10 @@ const Billing = () => (
       viewport={{ once: true }}
     >
       <h2 className="heading2" dir="rtl">
-        طرق دفع متعددة <br className="sm:block hidden" /> 
+        حمل التطبيق  <br className="sm:block hidden" /> 
       </h2>
       <p className="paragraph max-w-[470px] mt-5 " dir="rtl" >
-      توفر المنصة العديد من طرق الدفع تسهيلًا على العملاء للدفع بالوسيلة المناسبة، مع ضمان سياسة دفع آمنة
-
+      اكتشف الإمكانيات - قم بالتحميل الآن لتجربة الميزات السلسة لتطبيقنا
       </p>
 
       {/* <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
@@ -62,4 +61,4 @@ const Billing = () => (
   </section>
 );
 
-export default Billing;
+export default DownloadApp;

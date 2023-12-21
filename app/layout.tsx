@@ -1,7 +1,16 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins,Tajawal,Cairo_Play,Abel, Cairo } from "next/font/google";
 import "./styles/globals.css";
+//import localFont from 'next/font/local'
 
+export const tajawal =Cairo ({
+   subsets: ["latin"],
+  weight: [ "400",],
+  style:"normal",
+  variable:"--font-tajawal"
+  
+});
+//const myFont = localFont({ src: './my-font.woff2' })
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -19,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ar" >
-      <body className={`${poppins.variable} font-serif`}>{children}</body>
+    <html lang="ar" className={`${poppins.variable} ${tajawal.variable}  `}>
+      <body >{children}</body>
     </html>
   );
 }

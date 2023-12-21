@@ -1,25 +1,25 @@
-import { logo } from "../../public";
+import { logoWhite } from "../../public";
 import { footerLinks, socialMedia } from "../constants";
 import Image from "next/image";
 
 const Footer = () => (
-  <section className="flexCenter paddingY flex-col">
-    <div className="flexStart md:flex-row flex-col mb-8 w-full">
-      <div className="flex-[1] flex flex-col justify-start mr-10">
+  <section className="flexCenter  flex-col bg-primaryOne rounded-tl-[18px] rounded-tr-[18px] border-t-dimWhite  shadow-lg shadow-bl " dir="rtl">
+    <div className="flexCenter md:flex-row flex-col mb-0 w-full">
+      <div className=" flex flex-col justify-center align-middle items-center">
         <Image
-          src={logo}
+          src={logoWhite}
           alt="hoobank"
           width={266}
           height={72.14}
           priority={true}
           className="object-contain"
         />
-        <p className="paragraph mt-4 max-w-[312px]">
+        {/* <p className="paragraph mt-4 max-w-[312px]">
           A new way to make the payments easy, reliable and secure.
-        </p>
+        </p> */}
       </div>
 
-      <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
+      {/* <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
         {footerLinks.map((footerlink) => (
           <div
             key={footerlink.title}
@@ -42,15 +42,15 @@ const Footer = () => (
             </ul>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
 
-    <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
-      <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
-        Copyright Ⓒ 2022 HooBank. All Rights Reserved.
+    <div className="w-full flex justify-center items-center  flex-col pt-0  border-t-[#3F3E45]">
+      <p className="font-poppins font-normal  text-[18px] leading-[27px] text-white text-right mb-5" >
+        Copyright Ⓒ 2023 WaterMelon. All Rights Reserved.
       </p>
 
-      <div className="flex flex-row md:mt-0 mt-6">
+      <div className="flex flex-row md:mt-0 mt-6 p-3 text-right" dir="rtl">
         {socialMedia.map((social, index) => (
           <Image
             key={social.id}
@@ -60,7 +60,7 @@ const Footer = () => (
             height={21}
             priority={true}
             className={`object-contain cursor-pointer hover:opacity-75 ${
-              index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
+              index !== socialMedia.length - 1 ? "ml-6" : "ml-0"
             }`}
           />
         ))}

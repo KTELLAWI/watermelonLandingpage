@@ -13,6 +13,9 @@ import {
     send,
     shield,
     star,
+    person,
+    rose,
+    homeshope
   } from "../../public";
   
   export const navLinks = [
@@ -35,26 +38,28 @@ import {
   ];
   
   export const features = [
-    {
+  {
       id: "feature-1",
-      icon: star,
-      title: "Rewards",
-      content:
-        "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      icon: person, // Assuming you have a 'person' variable defined
+      title: "",
+      content: `
+        توفير أكبر عدد من مقدمي الخدمات بجودة عالية وخدمة مميزة لتحسين حياة المستهلكين في المملكة العربية السعودية.
+        ويترتب على نجاحنا التوسع وخلق فرص عمل أكثر لشباب السعودي لنجاح والازدهار.
+      `,
     },
     {
       id: "feature-2",
-      icon: shield,
-      title: "100% Secured",
+      icon: homeshope,
+      title: "",
       content:
-        "We take proactive steps make sure your information and transactions are secure.",
+        "تسهيل عملية التسوق عبر الإنترنت وتوفير الوقت والجهد لعملائنا ومقدمي الخدمات",
     },
     {
       id: "feature-3",
-      icon: send,
-      title: "Balance Transfer",
+      icon: rose,
+      title: " ",
       content:
-        "A balance transfer credit card can save you a lot of money in interest charges.",
+        "منصة من ابداع شباب سعودين يطمحون لجعل المملكة تكون من افضل الدول تقدمآ في مجال التجارة الالكترونية في العالم",
     },
   ];
   
@@ -62,26 +67,26 @@ import {
     {
       id: "feedback-1",
       content:
-        "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-      name: "Herman Jensen",
-      title: "Founder & Leader",
+        "التطبيق جميل جدا وأصبح اساسيا في حياتي",
+      name: "أحمد",
+      title: "طالب جامعي",
       img: people01,
     },
     {
       id: "feedback-2",
       content:
-        "Money makes your life easier. If you're lucky to have it, you're lucky.",
-      name: "Steve Mark",
-      title: "Founder & Leader",
-      img: people02,
+      "التطبيق جميل جدا وأصبح اساسيا في حياتي",
+    name: "أحمد",
+    title: "طالب جامعي",
+    img: people01,
     },
     {
       id: "feedback-3",
       content:
-        "It is usually people in the money business, finance, and international trade that are really rich.",
-      name: "Kenn Gallagher",
-      title: "Founder & Leader",
-      img: people03,
+        "التطبيق جميل جدا وأصبح اساسيا في حياتي",
+      name: "أحمد",
+      title: "طالب جامعي",
+      img: people01,
     },
   ];
   

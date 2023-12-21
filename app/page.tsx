@@ -10,29 +10,33 @@ import {
   CTA,
   Footer,
 } from "./components";
+import DownloadApp from "./components/DownloadApp";
+import ManyShops from "./components/ManyShops";
 
 export default function Home() {
   return (
-    <main className=" bg-primary w-full overflow-hidden font-poppins">
+    <main className=" bg-dimWhite w-full overflow-hidden font-poppins">
       <header className="paddingX flexCenter">
         <nav className="boxWidth">
           <Navbar />
         </nav>
       </header>
-      <section className=" bg-primary flexStart">
+      <section className=" bg-dimWhite flexStart">
         <section className="boxWidth">
           <Hero />
         </section>
       </section>
-      <section className=" bg-primary paddingX flexStart">
+      <section className=" bg-dimWhite paddingX flexStart">
         <section className="boxWidth">
-          <Stats />
+          {/* <Stats /> */}
           <Business />
           <Billing />
           <CardDeal />
+          <ManyShops/>
           <Testimonials />
-          <Clients />
+          {/* <Clients /> */}
           <CTA />
+          <DownloadApp/>
           <Footer />
         </section>
       </section>

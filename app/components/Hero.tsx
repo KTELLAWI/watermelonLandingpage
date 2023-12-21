@@ -15,31 +15,31 @@ const Hero = () => {
         whileInView="show"
         viewport={{ once: true }}
       >
-        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
+        {/* <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <Image src={discount} alt="discount" width={32} height={32} priority={true} />
           <p className="paragraph ml-2">
             <span className="text-white">20%</span> Discount For{" "}
             <span className="text-white">1 Month</span> Account
           </p>
-        </div>
+        </div> */}
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className=" text-right  flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] ss:leading-[100.8px] leading-[75px]
+          <h1 className=" text-right flex-1 font-tajawal   font-semibold ss:text-[72px] text-[52px] ss:leading-[100.8px] leading-[75px]
             bg-gradient-to-r bg-clip-text  text-transparent 
-            from-primaryOne via-white to-primarTwo
+            from-primaryOne via-black to-primarTwo
             animate-text">
           ووتر ميلون <br className="sm:block hidden" />{" "}
-            <span className="text-gradient"></span>{" "}
+            <span className="text-gradient text-right"></span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStarted />
+            {/* <GetStarted /> */}
           </div>
         </div>
 
-        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-          
+        <h1 className="font-tajawal text-right font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
+           
         </h1>
-        <p  className="paragraph max-w-[470px] mt-5 text-right">
+        <p  className="paragraph max-w-[470px] mt-5  text-right">
         قوِّي عملك، وجمِّع خدماتك - وترميلون، المنصة الرقمية المخصصة لأصحاب المتاجر ومقدمي الخدمات
         </p>
       </motion.div>
@@ -51,14 +51,14 @@ const Hero = () => {
         whileInView="show"
         viewport={{ once: true }}
       >
-        {/* <Image
+        <Image
           src={robot2}
           alt="billing"
           width={0}
           height={0}
-          className="sm:w-[100%] w-[90%] sm:h-[100%] h-[90%] relative z-[5]"
+          className="sm:w-[70%] w-[75%] sm:h-[100%] h-[75%] relative z-[5]"
           priority={true}
-        /> */}
+        />
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
@@ -68,7 +68,7 @@ const Hero = () => {
       </motion.div>
 
       <div className="ss:hidden flexCenter">
-        <GetStarted />
+        {/* <GetStarted /> */}
       </div>
     </section>
   );

@@ -15,6 +15,9 @@
 * {
   scroll-behavior: smooth;
 }
+/* h1 {
+  font-family: var(--tajawal);
+} */
 
 .text-gradient {
   background: radial-gradient(
@@ -105,7 +108,8 @@
 }
 
 .feature-card:hover {
-  background: var(--black-gradient);
+  background: #D31152;
+  /* //var(--black-gradient); */
   box-shadow: var(--card-shadow);
 }
 
@@ -118,7 +122,8 @@
 }
 
 .feedback-card:hover {
-  background: var(--black-gradient);
+  background: #D31152;
+  /* var(--black-gradient); */
 }
 
 .blue__gradient {
@@ -142,10 +147,10 @@
     @apply xl:max-w-[1280px] w-full;
   }
   .heading2 {
-    @apply font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full;
+    @apply font-tajawal font-semibold xs:text-[48px] text-[40px] text-black xs:leading-[76.8px] leading-[66.8px] w-full;
   }
   .paragraph {
-    @apply font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px];
+    @apply  font-normal text-[25px] leading-[44px];
   }
   .flexCenter {
     @apply flex justify-center items-center;

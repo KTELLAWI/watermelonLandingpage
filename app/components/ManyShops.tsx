@@ -4,7 +4,7 @@ import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const Billing = () => (
+const ManyShops = () => (
   <section id="product" className="sectionReverse">
     <motion.div
       className="sectionImgReverse"
@@ -35,10 +35,11 @@ const Billing = () => (
       viewport={{ once: true }}
     >
       <h2 className="heading2" dir="rtl">
-        طرق دفع متعددة <br className="sm:block hidden" /> 
+      متاجر متنوعة<br className="sm:block hidden" /> 
       </h2>
       <p className="paragraph max-w-[470px] mt-5 " dir="rtl" >
-      توفر المنصة العديد من طرق الدفع تسهيلًا على العملاء للدفع بالوسيلة المناسبة، مع ضمان سياسة دفع آمنة
+      إذا كان لديكم نشاط تجاري يمكنكم الانضمام لمنصة وترمليون وإنشاء صفحتكم الخاصة بمثابة متجر مستقل لعرض الخدمات واستقبال الطلبات
+
 
       </p>
 
@@ -62,4 +63,4 @@ const Billing = () => (
   </section>
 );
 
-export default Billing;
+export default ManyShops;

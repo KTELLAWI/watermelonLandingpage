@@ -14,16 +14,15 @@ const CardDeal = () => (
       whileInView="show"
       viewport={{ once: true }}
     >
-      <h2 className="heading2">
-        Find a better card deal <br className="sm:block hidden" /> in few easy
-        steps.
+      <h2 className="heading2" dir="rtl">
+      وفر وقتك
+ <br className="sm:block hidden" /> 
       </h2>
-      <p className="paragraph max-w-[470px] mt-5">
-        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-        aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+      <p className="paragraph max-w-[470px] mt-5" dir="rtl">
+      فرصة مميزة لمقدمي الخدمات بعرض خدماته واستقبال الطلبات في الحصول على احتياجاتهم في أسرع وقت مع تحليلات على مدار الوقت
       </p>
 
-      <Button styles={`mt-10`} />
+      {/* <Button styles={`mt-10`} /> */}
     </motion.div>
 
     <motion.div

@@ -27,23 +27,23 @@ const FeedBackCard = ({ content, name, title, img }: feedbackCardPropTypes) => (
       className="object-contain"
       priority={true}
     />
-    <p className="font-poppins font-normal text-[18px] leading-[32px] text-white my-10">
+    <p className="font-poppins font-normal text-[18px] leading-[32px] text-black my-10" dir="rtl">
       {content}
     </p>
     <div className="flex">
-      <Image
+      {/* <Image
         src={img}
         alt={name}
         width={48}
         height={48}
         className="rounded-full object-contain"
         priority={true}
-      />
+      /> */}
       <div className="flex flex-col ml-4">
-        <h1 className="font-poppins font-semibold text-[20px] leading-[32px] text-white">
+        <h1 className="font-poppins font-semibold text-[20px] leading-[32px] text-black" dir="rtl">
           {name}
         </h1>
-        <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+        <p className="font-poppins font-normal text-[16px] leading-[24px] text-black" dir="rtl">
           {title}
         </p>
       </div>

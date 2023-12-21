@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-
+const {fontFamily} = require("tailwindcss/defaultTheme");
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -18,6 +18,8 @@ const config: Config = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        tajawal: ["var(--font-tajwal)", ...fontFamily.sans],
+        mono: ['var(--font-tajwal)'],
       },
     },
     screens: {
