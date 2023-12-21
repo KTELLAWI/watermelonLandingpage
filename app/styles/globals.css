@@ -108,7 +108,13 @@
 }
 
 .feature-card:hover {
-  background: #D31152;
+  background: #0F9887;
+  color: white;
+  /* //var(--black-gradient); */
+  box-shadow: var(--card-shadow);
+}
+.feature-card:hover p {
+  color: white;
   /* //var(--black-gradient); */
   box-shadow: var(--card-shadow);
 }
@@ -122,7 +128,12 @@
 }
 
 .feedback-card:hover {
-  background: #D31152;
+  background: #0F9887;
+  color:whitesmoke;
+  /* var(--black-gradient); */
+}
+.feedback-card:hover p {
+  color:whitesmoke;
   /* var(--black-gradient); */
 }
 

@@ -1,5 +1,5 @@
 "use client";
-import { apple, bill, google } from "../../public";
+import { apple, bill, downloadApp, google, qrcode } from "../../public";
 import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -14,7 +14,7 @@ const DownloadApp = () => (
       viewport={{ once: true }}
     >
       <Image
-        src={bill}
+        src={downloadApp}
         alt="billing"
         width={0}
         height={0}
@@ -40,8 +40,15 @@ const DownloadApp = () => (
       <p className="paragraph max-w-[470px] mt-5 " dir="rtl" >
       اكتشف الإمكانيات - قم بالتحميل الآن لتجربة الميزات السلسة لتطبيقنا
       </p>
+      <Image
+          src={qrcode}
+          alt="google_play"
+          width={128.86}
+          height={42.05}
+          className="object-contain mr-5 cursor-pointer"
+        />
 
-      {/* <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
+      <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
         <Image
           src={apple}
           alt="google_play"
@@ -56,7 +63,7 @@ const DownloadApp = () => (
           height={43.08}
           className="object-contain cursor-pointer"
         />
-      </div> */}
+      </div>
     </motion.div>
   </section>
 );

@@ -28,7 +28,8 @@ import rose from "./rose.svg";
 import person from "./person.svg";
 import homeshope from "./homeShope.svg";
 import logoWhite from "./logowhite.svg"
-
+import downloadApp from "./downloadApp.png"
+import qrcode from "./qrcode.png"
 export {
   airbnb,
   bill,
@@ -59,5 +60,7 @@ export {
   rose,
   person,
   homeshope,
-  logoWhite
+  logoWhite,
+  downloadApp,
+  qrcode
 };

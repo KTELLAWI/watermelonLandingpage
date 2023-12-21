@@ -11,6 +11,7 @@ import {
   Footer,
 } from "./components";
 import DownloadApp from "./components/DownloadApp";
+import Faq from "./components/Faq";
 import ManyShops from "./components/ManyShops";
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
           <Testimonials />
           {/* <Clients /> */}
           <CTA />
+          {/* <Faq/> */}
           <DownloadApp/>
           <Footer />
         </section>
