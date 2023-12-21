@@ -1,5 +1,5 @@
 "use client";
-import { apple, bill, google } from "../../public";
+import { apple, bill, google, manyshops } from "../../public";
 import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -14,7 +14,7 @@ const ManyShops = () => (
       viewport={{ once: true }}
     >
       <Image
-        src={bill}
+        src={manyshops}
         alt="billing"
         width={0}
         height={0}
@@ -35,7 +35,7 @@ const ManyShops = () => (
       viewport={{ once: true }}
     >
       <h2 className="heading2" dir="rtl">
-      متاجر متنوعة<br className="sm:block hidden" /> 
+      متاجر  <span className="underlined underline-clip">متنوعة</span> <br className="sm:block hidden" /> 
       </h2>
       <p className="paragraph max-w-[470px] mt-5 " dir="rtl" >
       إذا كان لديكم نشاط تجاري يمكنكم الانضمام لمنصة وترمليون وإنشاء صفحتكم الخاصة بمثابة متجر مستقل لعرض الخدمات واستقبال الطلبات

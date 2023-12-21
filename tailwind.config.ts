@@ -30,10 +30,12 @@ const config: Config = {
       lg: "1200px",
       xl: "1700px",
     },
-    'animation': {
+    animation: {
       'text':'text 5s ease infinite',
+      "accordion-down": "accordion-down 0.2s ease-out",
+      "accordion-up": "accordion-up 0.2s ease-out",
   },
-  'keyframes': {
+  keyframes: {
       'text': {
           '0%, 100%': {
              'background-size':'200% 200%',
@@ -44,9 +46,18 @@ const config: Config = {
               'background-position': 'right center'
           }
       },
-  }
+      "accordion-down": {
+        from: { height: "0" },
+        to: { height: "var(--radix-accordion-content-height)" },
+      },
+      "accordion-up": {
+        from: { height: "var(--radix-accordion-content-height)" },
+        to: { height: "0" },
+      },
+    },
+  
 
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 }
 export default config

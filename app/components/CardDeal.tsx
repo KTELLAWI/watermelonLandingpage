@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { card } from "../../public";
+import { card, savetime } from "../../public";
 import { slideIn } from "../styles/animations";
 import Button from "./Button";
 import Image from "next/image";
@@ -15,7 +15,7 @@ const CardDeal = () => (
       viewport={{ once: true }}
     >
       <h2 className="heading2" dir="rtl">
-      وفر وقتك
+       وفر<span className="underlined underline-clip"> وقتك</span> 
  <br className="sm:block hidden" /> 
       </h2>
       <p className="paragraph max-w-[470px] mt-5" dir="rtl">
@@ -33,7 +33,7 @@ const CardDeal = () => (
       viewport={{ once: true }}
     >
       <Image
-        src={card}
+        src={savetime}
         width={0}
         height={0}
         alt="billing"

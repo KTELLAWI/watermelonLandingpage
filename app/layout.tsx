@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Poppins,Tajawal,Cairo_Play,Abel, Cairo } from "next/font/google";
 import "./styles/globals.css";
+import { cn } from "@/lib/utils";
 //import localFont from 'next/font/local'
 
-export const tajawal =Cairo ({
-   subsets: ["latin"],
-  weight: [ "400",],
-  style:"normal",
+export const tajawal =Tajawal ({
+   subsets: ["arabic","latin"],
+  weight: [ "200", "300", "400", "500",  "700", "800", "900" ],
+ 
   variable:"--font-tajawal"
   
 });
@@ -29,7 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" className={`${poppins.variable} ${tajawal.variable}  `}>
-      <body >{children}</body>
+      <body   className={cn(
+          
+          tajawal.variable
+        )}>{children}</body>
     </html>
   );
 }

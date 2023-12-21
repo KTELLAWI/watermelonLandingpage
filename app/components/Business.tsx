@@ -32,7 +32,7 @@ const FeatureCard = ({ icon, title, content, index }: featureCardProps) => (
       {/* <h1 className="font-poppins font-semibold text-white text-[18px] text-right leading-[23px] mb-1">
         {title}
       </h1> */}
-      <p className=" font-tajawal font-bold  text-black text-[16px] leading-[24px] mb-1 text-right">
+      <p className="paragraph text-black  leading-[24px] mb-1 text-right">
         {content}
       </p>
     </div>

@@ -30,6 +30,9 @@ import homeshope from "./homeShope.svg";
 import logoWhite from "./logowhite.svg"
 import downloadApp from "./downloadApp.png"
 import qrcode from "./qrcode.png"
+import manyshops from "./manyShops.png"
+import savetime from "./savetime.png"
+import billing1 from "./billing.png"
 export {
   airbnb,
   bill,
@@ -62,5 +65,6 @@ export {
   homeshope,
   logoWhite,
   downloadApp,
-  qrcode
+  qrcode,
+  manyshops,savetime,billing1
 };

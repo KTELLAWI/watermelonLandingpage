@@ -21,19 +21,23 @@ import {
   export const navLinks = [
     {
       id: "home",
-      title: "Home",
+      title: "الرئيسية",
     },
     {
       id: "features",
-      title: "Features",
+      title: "من نحن",
     },
     {
       id: "product",
-      title: "Product",
+      title: "الميزات",
     },
     {
-      id: "clients",
-      title: "Clients",
+      id: "faq",
+      title: "الأسئلة المتكررة",
+    },
+    {
+      id: "download",
+      title: "حمل التطبيق",
     },
   ];
   

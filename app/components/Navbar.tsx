@@ -94,18 +94,18 @@ const Navbar = () => {
       whileInView="show"
       viewport={{ once: true }}
     >
-      <div className="rounded-bl-full py-1 rounded-br-full bg-white w-[180px] flex justify-center items-center shadow-md"
+      <div  className="rounded-bl-full py-1 rounded-br-full bg-white w-[180px] flex justify-center items-center shadow-md"
        
       >
       <Image src={logo} alt="hoobank" width={124} height={32} loading="eager" />
       </div>
-      <ul className="list-none sm:flex hidden justify-end  items-center flex-1">
+      <ul dir="rtl" className="list-none sm:flex hidden justify-start  items-center flex-1 ">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-secondary ${
+            className={`font-tajawal font-semibold cursor-pointer text-[16px] hover:text-secondary ${
               active === nav.title ? "text-secondary" : "text-white"
-            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
+            } ${index === navLinks.length - 1 ? "mr-10" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
@@ -127,7 +127,7 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-50`}
+          } p-6 bg-primaryOne absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-50`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (

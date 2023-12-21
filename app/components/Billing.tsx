@@ -1,5 +1,5 @@
 "use client";
-import { apple, bill, google } from "../../public";
+import { apple, bill, billing1, google } from "../../public";
 import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -14,7 +14,7 @@ const Billing = () => (
       viewport={{ once: true }}
     >
       <Image
-        src={bill}
+        src={billing1}
         alt="billing"
         width={0}
         height={0}
@@ -34,8 +34,8 @@ const Billing = () => (
       whileInView="show"
       viewport={{ once: true }}
     >
-      <h2 className="heading2" dir="rtl">
-        طرق دفع متعددة <br className="sm:block hidden" /> 
+      <h2 className="heading2 " dir="rtl">
+        طرق دفع  <span className="underlined underline-clip">متعددة</span><br className="sm:block hidden" /> 
       </h2>
       <p className="paragraph max-w-[470px] mt-5 " dir="rtl" >
       توفر المنصة العديد من طرق الدفع تسهيلًا على العملاء للدفع بالوسيلة المناسبة، مع ضمان سياسة دفع آمنة

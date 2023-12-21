@@ -24,11 +24,13 @@ const Hero = () => {
         </div> */}
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className=" text-right flex-1 font-tajawal   font-semibold ss:text-[72px] text-[52px] ss:leading-[100.8px] leading-[75px]
+          <h1 className=" text-right flex-1 font-tajawal font-semibold ss:text-[72px] text-[52px] ss:leading-[100.8px] leading-[75px]
             bg-gradient-to-r bg-clip-text  text-transparent 
             from-primaryOne via-black to-primarTwo
-            animate-text">
-          ووتر ميلون <br className="sm:block hidden" />{" "}
+            animate-text  ">
+          ووتر<span className="underlined underline-clip bg-gradient-to-r bg-clip-text  text-transparent 
+            from-primaryOne via-black to-primarTwo
+            animate-text">ميلون</span> <br className="sm:block hidden " />{" "}
             <span className="text-gradient text-right"></span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
@@ -39,7 +41,7 @@ const Hero = () => {
         <h1 className="font-tajawal text-right font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
            
         </h1>
-        <p  className="paragraph max-w-[470px] mt-5  text-right">
+        <p  className="paragraph2 max-w-[470px] mt-5 font-tajawal  text[25px] text-right">
         قوِّي عملك، وجمِّع خدماتك - وترميلون، المنصة الرقمية المخصصة لأصحاب المتاجر ومقدمي الخدمات
         </p>
       </motion.div>

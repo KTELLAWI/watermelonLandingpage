@@ -45,12 +45,12 @@ const Footer = () => (
       </div> */}
     </div>
 
-    <div className="w-full flex justify-center items-center  flex-col pt-0  border-t-[#3F3E45]">
-      <p className="font-poppins font-normal  text-[18px] leading-[27px] text-white text-right mb-5" >
+    <div  dir="rtl" className="w-full flex justify-center items-center mx-auto  flex-col pt-0  border-t-[#3F3E45]">
+      <p className="font-poppins font-normal  text-[18px] leading-[27px] text-white text-center mb-2" >
         Copyright Ⓒ 2023 WaterMelon. All Rights Reserved.
       </p>
 
-      <div className="flex flex-row md:mt-0 mt-6 p-3 text-right" dir="rtl">
+      <div className="flex flex-row md:mt-0 mt-3 p-3 text-right" dir="rtl">
         {socialMedia.map((social, index) => (
           <Image
             key={social.id}

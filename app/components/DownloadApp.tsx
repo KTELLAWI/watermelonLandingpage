@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const DownloadApp = () => (
-  <section id="product" className="sectionReverse">
+  <section id="download" className="sectionReverse">
     <motion.div
       className="sectionImgReverse"
       variants={slideIn("left", "tween", 0.2, 1.5)}
@@ -16,9 +16,9 @@ const DownloadApp = () => (
       <Image
         src={downloadApp}
         alt="billing"
-        width={0}
-        height={0}
-        className="w-[100%] h-[100%] relative z-[5]"
+        width={100}
+        height={150}
+        className="w-[90%] h-[90%] relative z-[5]"
       />
 
       {/* gradient start */}
@@ -35,7 +35,7 @@ const DownloadApp = () => (
       viewport={{ once: true }}
     >
       <h2 className="heading2" dir="rtl">
-        حمل التطبيق  <br className="sm:block hidden" /> 
+        حمل <span className="underlined underline-clip">التطبيق</span>   <br className="sm:block hidden" /> 
       </h2>
       <p className="paragraph max-w-[470px] mt-5 " dir="rtl" >
       اكتشف الإمكانيات - قم بالتحميل الآن لتجربة الميزات السلسة لتطبيقنا
