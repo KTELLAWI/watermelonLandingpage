@@ -10,12 +10,12 @@ const CTA = () => {
 
 return (
   <section dir="rtl"
-    className="flexCenter relative marginY padding sm:flex-row flex-col  bg-gradient-to-r 
+    className="flexCenter relative marginY py-10 px-5 sm:flex-row flex-col  bg-gradient-to-r 
     from-primaryOne to-primaryOne bg-opacity-50  rounded-[20px] box-shadow"
   >
     <div className="flex-1 flex flex-col">
       {/* <h6 className="heading2">انضم إلينا وكُن جزءًا من رواد السوق الرقمي، حيث نقدم لك الفرصة للابتكار والتحول. </h6> */}
-      <p className="paragraph text-white  mt-5">
+      <p className=" text-white text-[30px]  mt-5">
       انضم إلينا وكُن جزءًا من رواد السوق الرقمي، حيث نقدم لك الفرصة للابتكار والتحول. 
       </p>
     </div>
