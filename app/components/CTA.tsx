@@ -6,7 +6,14 @@ import { menu,close, logoWhite } from "@/public";
 
 const CTA = () => {
   const [toggle, setToggle] = useState(false);
-
+  const refreshIframe = () => {
+    const iframe : any= document.getElementById('JotFormIFrame');
+    iframe.src = iframe.src; // Refresh the iframe by setting its source to the same URL
+  };
+  const handleToggle = () => {
+    setToggle(!toggle);
+    refreshIframe(); // Refresh the iframe URL when toggling
+  };
 
 return (
   <section dir="rtl"
@@ -52,7 +59,7 @@ return (
           height={0}
           priority={true}
           className="object-contain w-[10%] h-[10%] "
-          onClick={() => setToggle(!toggle)}
+          onClick={handleToggle}
         />
  <Image
           src={ logoWhite }
@@ -61,30 +68,39 @@ return (
           height={0}
           priority={true}
           className="object-contain w-[90%] h-[90%] "
-          onClick={() => setToggle(!toggle)}
+          onClick={handleToggle}
         />
         </div>
-        <div className="w-full sm:w-[50%] ">
+        <div className="w-full flex flex-col items-center justify-center sm:w-[50%] sm:flex sm:items-center sm:justify-center  sm:my-auto mx-auto ">
+        
         <iframe
  
  id="JotFormIFrame"
  title="Appointment Request Form"
- onLoad={() => window.parent.scrollTo(0, 0)}
+//  onLoad={() => window.parent.scrollTo(0, 0)}
 	
- allow="geolocation; microphone; camera"
- src=""
- frameBorder="0"
- style={{ minWidth: '100%', maxWidth: '100%', height: '400px', border: 'none' }}
- scrolling="yes"  // Enable scrolling
+
+ src="https://woocommerce-1184222-4160210.cloudwaysapps.com/form"
+ style={{ minWidth: '100%', maxWidth: '100%', height: '450px', border: 'none' }}
+  // Enable scrolling
 ></iframe>
+<Image
+          src={ close }
+          alt="close"
+          width={0}
+          height={0}
+          priority={true}
+          className=" sm:hidden object-contain w-[10%] h-[10%] "
+          onClick={handleToggle}
+        />
         </div>
  
 
-      <script type="text/javascript">
+      {/* <script type="text/javascript">
         {`
           // Add the script logic here (you can copy it from your provided code)
         `}
-      </script>
+      </script> */}
    
 
           </div>
