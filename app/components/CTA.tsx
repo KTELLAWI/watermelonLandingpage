@@ -18,7 +18,7 @@ const CTA = () => {
 return (
   <section dir="rtl"
     className="flexCenter relative marginY py-10 px-5 sm:flex-row flex-col  bg-gradient-to-r 
-    from-primaryOne via-primarTwo to-primaryOne bg-opacity-50  rounded-[20px] shadow-md "
+    from-primaryOne via-white to-primaryOne bg-opacity-50  rounded-[20px] shadow-md "
   >
     <div className="flex-1 flex flex-col">
       {/* <h6 className="heading2">انضم إلينا وكُن جزءًا من رواد السوق الرقمي، حيث نقدم لك الفرصة للابتكار والتحول. </h6> */}
