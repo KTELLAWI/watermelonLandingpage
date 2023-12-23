@@ -43,7 +43,7 @@ return (
             !toggle ? "hidden" : "flex"
           } p-6 absolute bg-primaryOne   min-w-full my-auto mx-auto rounded-xl sidebar z-50`}
         >
- {/* <a href="javascript:void( window.open( 'https://woocommerce-1184222-4160210.cloudwaysapps.com/form/', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) "> Appointment Request Form </a> */}
+ {/* <a href="javascript:void( window.open( '', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) "> Appointment Request Form </a> */}
  <div className="hidden  bg-primaryOne z-90  sm:flex sm:flex-1 justify-center items-center ">
  <Image
           src={ close }
