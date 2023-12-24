@@ -4,9 +4,9 @@ import "./styles/globals.css";
 import { cn } from "@/lib/utils";
 //import localFont from 'next/font/local'
 
- const tajawal =Cairo ({
+ const tajawal =Tajawal ({
    subsets: ["arabic","latin"],
-  // weight: [ "200", "300", "400", "500",  "700", "800", "900" ],
+   weight: [ "200", "300", "400", "500",  "700", "800", "900" ],
  
   variable:"--font-tajawal"
   
