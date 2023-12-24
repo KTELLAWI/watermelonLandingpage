@@ -14,10 +14,11 @@
 
 * {
   scroll-behavior: smooth;
+  font-family: var(--font-tajawal);
 }
-/* h1 {
-  font-family: var(--tajawal);
-} */
+h1 {
+  font-family: var(--font-tajawal);
+}
 
 .text-gradient {
   background: radial-gradient(

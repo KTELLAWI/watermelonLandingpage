@@ -17,9 +17,9 @@ const config: Config = {
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        // poppins: ["Poppins", "sans-serif"],
         tajawal: ["var(--font-tajwal)", ...fontFamily.sans],
-        mono: ['var(--font-tajwal)'],
+         mono: ['var(--font-tajwal)'],
       },
     },
     screens: {
