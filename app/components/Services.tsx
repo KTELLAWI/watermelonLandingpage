@@ -13,34 +13,33 @@ interface featureCardProps {
 }
 
 const FeatureCard = ({ icon, title, content, index }: featureCardProps) => (
-  <div dir="rtl"
-    className={`flex p-6 rounded-[20px] ${
-      index !== features.length - 1 ? "mb-6" : "mb-0"
-    } feature-card`}
-  >
-    <div dir="rtl" className="w-[64px] h-[64px] rounded-full flexCenter bg-primaryOne">
-      <Image
+   <div className= "">
+   <div  dir ="rtl" className="single-services-box ">
+    <div className="icon">
+    <Image
         src={icon}
         alt="icon"
         width={100}
         height={100}
-        className="w-[90%] h-[90%] object-contain"
+        className="w-[90%] h-[90%] object-contain flaticon-data-analytics"
         priority={true}
       />
+        {/* <i className="flaticon-data-analytics"></i> */}
     </div>
-    <div className="flex-1 flex flex-col mr-3" dir="rtl">
-      {/* <h1 className="font-poppins font-semibold text-white text-[18px] text-right leading-[23px] mb-1">
-        {title}
-      </h1> */}
-      <p className="paragraph text-black  leading-[24px] mb-1 text-right">
-        {content}
-      </p>
+    {/* <h3>Data Analytics</h3> */}
+    <p>{content} </p>
+    {/* <div className="services-btn">
+        <a href="single-services.html" className="services-btn-one">
+            Read More
+            <i className="flaticon-right"></i>
+        </a>
+    </div> */}
     </div>
-  </div>
+    </div>
 );
 
-const Business = () => (
-  <section dir="rtl" id="features" className="section">
+const Services = () => (
+  <section dir="rtl" id="features" className="flex flex-col gap-5">
     <motion.div
       className="sectionInfo"
       variants={slideIn("left", "tween", 0.2, 1.5)}
@@ -48,18 +47,18 @@ const Business = () => (
       whileInView="show"
       viewport={{ once: true }}
     >
-      {/* <h2 className="heading2 text-right">
-        You do the business, <br className="sm:block hidden text-right" /> we&#8217;ll
-        handle the money.
-      </h2> */}
-      <p className="text-right font-tajawal paragraph w-full mt-5 text-black">
+      <h2 className="heading2 text-black text-center mx-auto">
+        من <span className= "underlined underline-clip text-black">نحن</span>
+        
+      </h2>
+      <p className="text-center font-tajawal paragraph w-full mt-24 mb-20 max-w-[400px] sm:max-w-[75%] mx-auto sm:text-wrap sm:text-center text-black">
       وترميلون منصة إلكترونية هدفها جميع أصحاب المتاجر ومقدمي الخدمات في مكانٍ واحد،يتمكنون من خلالها إضافة خدماتهم وإنشاء صفحات خاصة بها، بحيث تصبح بمثابة متجر إلكتروني متكامل لهم، فمن التسجيل على المنصة تصبح لديهم صفحة خاصة تتضمن رفع الخدمات أو المنتجات
       </p>
 
       {/* <Button styles={`mt-10`} /> */}
     </motion.div>
 
-    {/* <div dir="rtl" className="sectionImg flex-col">
+    <div dir="rtl" className=" flex-col mx-auto  sm:flex sm:flex-row items-center justify-between gap-5 ">
       {features.map((feature, index) => (
         <motion.div
           key={feature.id}
@@ -71,8 +70,8 @@ const Business = () => (
           <FeatureCard key={feature.id} {...feature} index={index} />
         </motion.div>
       ))}
-    </div> */}
+    </div>
   </section>
 );
 
-export default Business;
+export default Services;

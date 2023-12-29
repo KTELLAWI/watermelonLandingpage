@@ -7,9 +7,11 @@
     144.39deg,
     #ffffff -278.56%,
     #6d6d6d -78.47%,
-    #11101d 91.61%
+    #11101d 91.61%,
+    
   );
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  --transition: ease 0.6s;
 }
 
 * {
@@ -19,6 +21,407 @@
 h1 {
   font-family: var(--font-tajawal);
 }
+
+/* service */
+.process-item {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+  flex: 1; 
+ 
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-right: 35px;
+  padding-left: 35px;
+  max-width: 350px; 
+  min-height: 600px; 
+  max-height: 600px; /* Set a maximum height for the paragraph */
+  overflow: hidden;
+}
+
+.process-item img {
+  margin-bottom: 15px;
+}
+
+.process-item h3 {
+  font-size: 22px;
+  color: black;
+  /* margin: 10 10 10px; */
+}
+
+.process-item p {
+  margin: 10;
+  color:#000000;
+}
+
+.process-item .process-btn {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 14px;
+  color: #737b9a;
+  font-weight: 600;
+  transition: 0.6s;
+}
+
+.process-item .process-btn i {
+  position: relative;
+  transition: 0.6s;
+  color: #737b9a;
+  top: 1px;
+  margin-left: 5px;
+}
+
+.process-item .process-btn i:before {
+  font-size: 14px;
+}
+
+.process-item:hover .process-btn {
+  letter-spacing: 1px;
+  color: #00b0ee;
+}
+
+.process-item:hover .process-btn i {
+  color: #00b0ee;
+}
+
+.single-services-box {
+  flex: 1; 
+  margin-bottom: 30px;
+  box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+  background-color: #0F9887;
+  transition: var(--transition);
+  position: relative;
+  z-index: 1;
+  border-radius: 25px 0px 25px 0px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-right: 35px;
+  padding-left: 35px;
+  max-width: 350px; 
+  min-height: 250px; 
+  max-height: 250px; /* Set a maximum height for the paragraph */
+  overflow: hidden;
+}
+
+.single-services-box .icon {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  /* background-color: #; */
+  border-radius: 50%;
+  color: #0F9887;
+  transition: var(--transition);
+  margin-bottom: 15px;
+}
+
+.single-services-box .icon i::before {
+  font-size: 30px;
+}
+
+.single-services-box h3 {
+  margin-bottom: 0;
+  transition: var(--transition);
+  font-size: 22px;
+  position: absolute;
+  top: 48px;
+  left: 95px;
+  font-family: var(--font-tajawal);
+}
+
+.single-services-box h3 a {
+  display: inline-block;
+}
+
+.single-services-box p {
+  font-size: 14px;
+  transition: var(--transition);
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: #5ce1e6;
+}
+
+.single-services-box .services-btn {
+  margin-top: 16px;
+}
+
+.single-services-box .services-btn .services-btn-one {
+  display: inline-block;
+  font-size: var(--font-size);
+  color: #0F9887;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.single-services-box .services-btn i {
+  position: relative;
+  transition: var(--transition);
+  color: #0F9887;
+  top: 1px;
+}
+
+.single-services-box .services-btn i::before {
+  font-size: 14px;
+}
+
+.single-services-box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 0%;
+  background: #D31152;
+  border-radius: 0;
+  transition: var(--transition);
+}
+
+.single-services-box:hover {
+  transform: translateY(-10px);
+}
+
+.single-services-box:hover::before {
+  height: 100%;
+}
+
+.single-services-box:hover .icon {
+  transform: rotate(360deg);
+  color: #D31152;
+  /* background-color: #fff; */
+}
+
+.single-services-box:hover h3 {
+  color: #fff;
+}
+.single-services-box h3, p {
+  color: #fff;
+  font-weight: 500;
+}
+
+.single-services-box:hover h3 a {
+  color: #fff;
+}
+
+.single-services-box:hover p {
+  color: #fff;
+}
+
+.single-services-box:hover .services-btn .services-btn-one {
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.single-services-box:hover .services-btn i {
+  color: #fff;
+}
+/* end sevi */
+/* start reloader */
+@keyframes rotateMe {
+  0% {
+      transform: rotate(0deg)
+  }
+
+  to {
+      transform: rotate(1turn)
+  }
+}
+.spinnerimage {
+  animation-name: rotateMe;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear
+}
+.wave {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+  background: url("https://i.imgur.com/njRQ9N8.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate1 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+/* .footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate1 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+.creativebanner {
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%; */
+  background: linear-gradient(45deg, #7AE6C7, #0F9887, #024C4A);
+
+  
+  }
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: transparent;
+  top: 0;
+  left: 0;
+}
+
+.preloader .loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  right: 0;
+  transform: translateY(-43%);
+  text-align: center;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  transition: 0.5s linear;
+}
+
+.preloader .loader .box {
+  width: 100%;
+  height: 100%;
+  background: #D31152;
+  animation: animate 0.5s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+}
+
+.preloader .loader .shadow {
+  width: 100%;
+  height: 5px;
+  background: #000000;
+  opacity: 0.1;
+  position: absolute;
+  top: 59px;
+  left: 0;
+  border-radius: 50%;
+  animation: shadow 0.5s linear infinite;
+}
+
+.preloader::before,
+.preloader::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  z-index: -1;
+  background: #0F9887; /* Replace with the actual main color */
+  transition: 0.9s;
+}
+
+.preloader::after {
+  left: auto;
+  right: 0;
+}
+
+.preloader.preloader-deactivate {
+  visibility: hidden;
+}
+
+.preloader.preloader-deactivate::after,
+.preloader.preloader-deactivate::before {
+  width: 0;
+}
+
+.preloader.preloader-deactivate .loader {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes loader {
+  0% {
+      left: -100px;
+  }
+  100% {
+      left: 110%;
+  }
+}
+
+@keyframes animate {
+  17% {
+      border-bottom-right-radius: 3px;
+  }
+  25% {
+      transform: translateY(9px) rotate(22.5deg);
+  }
+  50% {
+      transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+      border-bottom-right-radius: 40px;
+  }
+  75% {
+      transform: translateY(9px) rotate(67.5deg);
+  }
+  100% {
+      transform: translateY(0) rotate(90deg);
+  }
+}
+
+@keyframes shadow {
+  50% {
+      transform: scale(1.2, 1);
+  }
+}
+/* end preloader */
 
 .text-gradient {
   background: radial-gradient(
@@ -166,7 +569,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, 0);
     border-radius: 50%;
-    border: 6px solid #0F9887;
+    border: 6px solid #D31152;
     /* Use a clip-path to hide and show the bits you want */
     clip-path: polygon(0 0, 50% 50%, 100% 0);
     

@@ -88,13 +88,13 @@ const Navbar = () => {
 
   return (
     <motion.nav 
-      className="w-full flex px-3  justify-between items-center navbar bg-primaryOne rounded-bl-[18px] rounded-br-[18px] shadow-lg"
+      className="w-full flex px-3  justify-between items-center navbar "
       variants={navVariants}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
     >
-      <div  className="rounded-bl-full py-1 rounded-br-full bg-white w-[180px] flex justify-center items-center shadow-md"
+      <div  className="rounded-bl-full py-1 rounded-br-full bg-white w-[180px] flex justify-center items-center"
        
       >
       <Image src={logo} alt="hoobank" width={124} height={32} loading="eager" />

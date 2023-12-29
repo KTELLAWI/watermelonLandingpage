@@ -15,7 +15,10 @@ import {
     star,
     person,
     rose,
-    homeshope
+    homeshope,
+    shops,
+    savetim,
+    payments
   } from "../../public";
   
   export const navLinks = [
@@ -66,6 +69,30 @@ import {
         "منصة من ابداع شباب سعودين يطمحون لجعل المملكة تكون من افضل الدول تقدمآ في مجال التجارة الالكترونية في العالم",
     },
   ];
+  export const features2 = [
+    {
+        id: "feature-1",
+        icon: payments, // Assuming you have a 'person' variable defined
+        title: "طرق دفع متعددة",
+        content: `
+        توفر المنصة العديد من طرق الدفع تسهيلًا على العملاء للدفع بالوسيلة المناسبة، مع ضمان سياسة دفع آمنة
+        `,
+      },
+      {
+        id: "feature-2",
+        icon: savetim,
+        title: "وفر وقتك",
+        content:
+          "فرصة مميزة لمقدمي الخدمات بعرض خدماته واستقبال الطلبات في الحصول على احتياجاتهم في أسرع وقت مع تحليلات على مدار الوقت",
+      },
+      {
+        id: "feature-3",
+        icon: shops,
+        title: "متاجر منتوعة",
+        content:
+          "إذا كان لديكم نشاط تجاري يمكنكم الانضمام لمنصة وترمليون وإنشاء صفحتكم الخاصة بمثابة متجر مستقل لعرض الخدمات واستقبال الطلبات ",
+      },
+    ];
   
   export const feedback = [
     {
@@ -114,65 +141,65 @@ import {
   
   export const footerLinks = [
     {
-      title: "Useful Links",
+      title: "روابط سريعة",
       links: [
         {
-          name: "Content",
+          name: "الرئيسية",
           link: "https://www.hoobank.com/content/",
         },
         {
-          name: "How it Works",
+          name: "من نحن",
           link: "https://www.hoobank.com/how-it-works/",
         },
         {
-          name: "Create",
+          name: "الميزات",
           link: "https://www.hoobank.com/create/",
         },
         {
-          name: "Explore",
+          name: "سياسة الخصوصية",
           link: "https://www.hoobank.com/explore/",
         },
         {
-          name: "Terms & Services",
+          name: "الشروط والاحكام",
           link: "https://www.hoobank.com/terms-and-services/",
         },
       ],
     },
     {
-      title: "Community",
+      title: "الشركة",
       links: [
         {
-          name: "Help Center",
+          name: "info@watermelon.sa",
           link: "https://www.hoobank.com/help-center/",
         },
         {
-          name: "Partners",
+          name: "00905456789088",
           link: "https://www.hoobank.com/partners/",
         },
         {
-          name: "Suggestions",
+          name: "الرياض - السعودية",
           link: "https://www.hoobank.com/suggestions/",
         },
-        {
-          name: "Blog",
-          link: "https://www.hoobank.com/blog/",
-        },
-        {
-          name: "Newsletters",
-          link: "https://www.hoobank.com/newsletters/",
-        },
+        // {
+        //   name: "سياسة الخصوصية",
+        //   link: "https://www.hoobank.com/blog/",
+        // },
+        // {
+        //   name: "الشروط والاحكام",
+        //   link: "https://www.hoobank.com/newsletters/",
+        // },
       ],
     },
     {
-      title: "Partner",
+      title: "حمل التطبيق",
       links: [
         {
-          name: "Our Partner",
-          link: "https://www.hoobank.com/our-partner/",
+          name: "googleplay",
+          link: "",
         },
         {
-          name: "Become a Partner",
-          link: "https://www.hoobank.com/become-a-partner/",
+          name: "apple",
+          link: "",
         },
       ],
     },

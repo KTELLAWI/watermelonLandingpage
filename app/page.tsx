@@ -1,3 +1,4 @@
+
 import {
   Navbar,
   Hero,
@@ -12,17 +13,21 @@ import {
 } from "./components";
 import DownloadApp from "./components/DownloadApp";
 import Faq from "./components/Faq";
+import Features from "./components/Features";
+import Intro from "./components/Intro";
 import ManyShops from "./components/ManyShops";
+import Services from "./components/Services";
 
 export default function Home() {
   return (
-    <main className=" bg-dimWhite w-full overflow-hidden font-poppins">
-      <header className="paddingX flexCenter">
-        <nav className="boxWidth">
+    <main className=" bg-dimWhite w-full overflow-hidden font-tajawal ">
+      <Intro/>
+      <header className=" flexCenter ">
+        <nav className="boxWidth z-10 ">
           <Navbar />
         </nav>
       </header>
-      <section className=" bg-dimWhite flexStart">
+      <section className=" bg-primaryOne flexStart">
         <section className="boxWidth">
           <Hero />
         </section>
@@ -30,18 +35,22 @@ export default function Home() {
       <section className=" bg-dimWhite paddingX flexStart">
         <section className="boxWidth">
           {/* <Stats /> */}
-          <Business />
-          <Billing />
+          {/* <Business /> */}
+          <Services/>
+          <Features/>
+          {/* <Billing />
           <CardDeal />
-          <ManyShops/>
+          <ManyShops/> */}
           <Testimonials />
           {/* <Clients /> */}
           <CTA />
           <Faq/>
           <DownloadApp/>
-          <Footer />
+         
         </section>
+        
       </section>
+      <Footer />
     </main>
   );
 }
