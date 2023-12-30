@@ -4,7 +4,7 @@ export default function
 () {
   return (
     <div>
-        <section className="fun-facts-area ptb-100 w-full h-[200px] mt-36 mb-36">
+        <section className="hidden sm:inline-block fun-facts-area ptb-100 w-full h-[200px] mt-36 mb-36">
             <div className="container">
                 {/* <div className="row align-items-center">
                     <div className="col-lg-3 col-md-6 col-sm-6">
