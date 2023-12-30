@@ -111,7 +111,7 @@ const Navbar = () => {
             <a href={`/${nav.id}`}>{nav.title}</a>
           </li>
         ))}
-        <a className=" hidden sm:inline-block default-btn mx-8" href="">
+        <a className=" hidden sm:inline-block default-btn mx-8" href="/joinus">
                                     انضم الينا
                                     <span className="top-[30px] left-[40px]"></span>
                                 </a>

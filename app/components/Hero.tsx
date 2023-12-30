@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className=" text-right flex-1 font-tajawal font-semibold ss:text-[72px] text-[52px] ss:leading-[100.8px] leading-[75px]
            text-white  ">
-          ووتر<span className= "underlined underline-clip text-white">ميلون</span> <br className="sm:block hidden " />{" "}
+          وتر<span className= "underlined underline-clip text-white">ميلون</span> <br className="sm:block hidden " />{" "}
             <span className=" text-gradient text-right"></span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">

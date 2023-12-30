@@ -43,8 +43,9 @@ import demo from "./about.png"
 import savetim from "./savetiming.png"
 import payments from "./payments.png"
 import contact from "./contact.png"
+import app1 from "./app.png"
 export {
-  appleblack,googlewhite,imageshaper,logowhitew,back2,shops,demo,savetim,payments,contact,
+  appleblack,googlewhite,imageshaper,logowhitew,back2,shops,demo,savetim,payments,contact,app1,
   airbnb,
   bill,
   binance,
