@@ -88,16 +88,18 @@ const Navbar = () => {
 
   return (
     <motion.nav 
-      className="w-full flex px-3  justify-between items-center  creativebanner border-none  "
+      className="w-full flex px-3  justify-between items-center  creativebanner border-none z-[100]  "
       variants={navVariants}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
     >
-      <div  className="rounded-bl-full py-1 rounded-br-full bg-white  w-[180px] flex justify-center items-center"
+      <div  className="rounded-bl-full py-1 rounded-br-full  bg-white  w-[180px] flex justify-center items-center"
        
       >
+        <a href="/">
       <Image src={logo} alt="hoobank" width={124} height={32} loading="eager" />
+      </a>
       </div>
       <ul dir="rtl" className="list-none sm:flex hidden justify-start  items-center flex-1 ">
         {navLinks.map((nav, index) => (
@@ -131,7 +133,7 @@ const Navbar = () => {
         <div dir="rtl"
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-primaryOne absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-50`}
+          } p-6 bg-primaryOne absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-[350]`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
@@ -145,6 +147,10 @@ const Navbar = () => {
                 <a href={`/${nav.id}`}>{nav.title}</a>
               </li>
             ))}
+            <a className=" hidden sm:inline-block default-btn mt-2" href="/joinus">
+                                    انضم الينا
+                                    <span className="top-[30px] left-[40px]"></span>
+                                </a>
           </ul>
         </div>
       </div>

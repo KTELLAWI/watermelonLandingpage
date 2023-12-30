@@ -28,7 +28,7 @@ import ContactForm from "../components/ContactForm";
       <main className=" bg-dimWhite w-full overflow-hidden font-tajawal ">
         <Intro/>
         <header className=" flexCenter ">
-          <nav className="boxWidth z-10 bg-primaryOne ">
+          <nav className="boxWidth z-[200] bg-primaryOne ">
             <Navbar />
           </nav>
         </header>
@@ -53,7 +53,7 @@ import ContactForm from "../components/ContactForm";
         alt=""
         width={0}
         height={0}
-        className=" hidden sm:inline-block sm:w-[70%] sm:h-[70%]  sm:z-[5]"
+        className=" hidden sm:flex sm:w-[70%] sm:h-[70%]  sm:z-[0]"
       />
      
         </div>

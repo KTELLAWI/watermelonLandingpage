@@ -81,12 +81,12 @@ const Footer = () => (
       </div>
     </div>
 
-    <div  dir="rtl" className="w-full flex  items-center mx-auto border-t-4 border-t-white pt-1 justify-between ">
+    <div  dir="rtl" className="w-full flex-col sm:flex items-center mx-auto border-t-4 border-t-white pt-1 justify-between ">
       <p className="font-poppins font-normal  text-[18px] leading-[27px] text-white text-center mb-2" >
-        Copyright Ⓒ 2023 WaterMelon. All Rights Reserved.
+         Ⓒ 2023 جميع الحقوق محفوظة وترميلون.
       </p>
 
-      <div className="flex flex-row md:mt-0 mt-3 p-3 text-right" dir="rtl">
+      <div className="flex flex-row md:mt-0 mt-3 p-3 justify-center items-center " >
         {socialMedia.map((social, index) => (
           <Image
             key={social.id}
