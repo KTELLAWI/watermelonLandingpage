@@ -10,10 +10,10 @@ interface featureCardProps {
     icon: string;
     title: string;
     content: string;
-    index: number;
+    id: number;
 }
 
-const FeatureCard = ({ icon, title, content, index }: featureCardProps) => (
+const FeatureCard = ({ icon, title, content, id }: featureCardProps) => (
     <div className="flex-1">
         <div className="process-item max-w-[50%] ">
         <Image
