@@ -39,7 +39,7 @@ const FeatureCard = ({ icon, title, content, index }: featureCardProps) => (
 );
 
 const Services = () => (
-  <section dir="rtl" id="features" className="flex flex-col gap-5">
+  <section dir="rtl" id="about" className="flex flex-col gap-5">
     <motion.div
       className="sectionInfo"
       variants={slideIn("left", "tween", 0.2, 1.5)}

@@ -1,5 +1,5 @@
 "use client";
-import { apple, bill, downloadApp, google, qrcode } from "../../public";
+import { apple, appleblack, bill, downloadApp, google, qrcode } from "../../public";
 import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -16,9 +16,9 @@ const DownloadApp = () => (
       <Image
         src={downloadApp}
         alt="billing"
-        width={100}
-        height={150}
-        className="w-[90%] h-[90%] relative z-[5]"
+        width={0}
+        height={0}
+        className="w-[80%] h-[90%] relative z-[5]"
       />
 
       {/* gradient start */}
@@ -37,7 +37,7 @@ const DownloadApp = () => (
       <h2 className="heading2" dir="rtl">
         حمل <span className="underlined underline-clip">التطبيق</span>   <br className="sm:block hidden" /> 
       </h2>
-      <p className="paragraph max-w-[470px] mt-5 " dir="rtl" >
+      <p className="paragraph max-w-[470px] mt-5 text-black " dir="rtl" >
       اكتشف الإمكانيات - قم بالتحميل الآن لتجربة الميزات السلسة لتطبيقنا
       </p>
       <Image
@@ -50,7 +50,7 @@ const DownloadApp = () => (
 
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
         <Image
-          src={apple}
+          src={appleblack}
           alt="google_play"
           width={128.86}
           height={42.05}

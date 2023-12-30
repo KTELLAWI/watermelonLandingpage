@@ -1,29 +1,40 @@
 "use client";
-import { apple, bill, billing1, google } from "../../public";
+import { apple, bill, billing1, contact, google } from "../../public";
 import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Billing = () => (
-  <section id="product" className="sectionReverse">
+  <section id="contact" className="sectionReverse">
     <motion.div
-      className="sectionImgReverse"
+      className="sectionImgReverse px-8"
       variants={slideIn("left", "tween", 0.2, 1.5)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
     >
-      <Image
+      {/* <Image
         src={billing1}
         alt="billing"
         width={0}
         height={0}
         className="w-[100%] h-[100%] relative z-[5]"
-      />
+      /> */}
+      <iframe
+
+        id="JotFormIFrame"
+        title="Appointment Request Form"
+        //  onLoad={() => window.parent.scrollTo(0, 0)}
+
+
+        src="https://woocommerce-1184222-4160210.cloudwaysapps.com/form"
+        style={{ minWidth: '100%', maxWidth: '100%', height: '450px', border: 'none' }}
+      // Enable scrolling
+      ></iframe>
 
       {/* gradient start */}
-      <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
-      <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
+      {/* <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" /> */}
+      {/* <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" /> */}
       {/* gradient end */}
     </motion.div>
 
@@ -34,13 +45,20 @@ const Billing = () => (
       whileInView="show"
       viewport={{ once: true }}
     >
-      <h2 className="heading2 " dir="rtl">
+      {/* <h2 className="heading2 " dir="rtl">
         طرق دفع  <span className="underlined underline-clip">متعددة</span><br className="sm:block hidden" /> 
       </h2>
       <p className="paragraph max-w-[470px] mt-5 " dir="rtl" >
       توفر المنصة العديد من طرق الدفع تسهيلًا على العملاء للدفع بالوسيلة المناسبة، مع ضمان سياسة دفع آمنة
 
-      </p>
+      </p> */}
+      <Image
+        src={contact}
+        alt="billing"
+        width={0}
+        height={0}
+        className="w-[75%] h-[80%]  z-[5]"
+      />
 
       {/* <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
         <Image

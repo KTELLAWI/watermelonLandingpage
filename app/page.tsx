@@ -16,41 +16,48 @@ import Faq from "./components/Faq";
 import Features from "./components/Features";
 import Intro from "./components/Intro";
 import ManyShops from "./components/ManyShops";
+import Sectionbanner from "./components/Sectionbanner";
 import Services from "./components/Services";
+import Slider from "./components/Slider";
 
 export default function Home() {
   return (
     <main className=" bg-dimWhite w-full overflow-hidden font-tajawal ">
       <Intro/>
       <header className=" flexCenter ">
-        <nav className="boxWidth z-10 ">
+        <nav className="boxWidth  z-10 ">
           <Navbar />
         </nav>
       </header>
-      <section className=" bg-primaryOne flexStart">
-        <section className="boxWidth">
+      <section className=" flexStart ">
+        <section className="boxWidth creativebanner">
           <Hero />
         </section>
       </section>
-      <section className=" bg-dimWhite paddingX flexStart">
+      <section className=" bg-dimWhite  flexStart">
         <section className="boxWidth">
+          <div className="paddingX">
           {/* <Stats /> */}
           {/* <Business /> */}
           <Services/>
+          <Sectionbanner/>
           <Features/>
           {/* <Billing />
           <CardDeal />
           <ManyShops/> */}
-          <Testimonials />
+          {/* <Testimonials /> */}
+          <Slider/>
           {/* <Clients /> */}
           <CTA />
+          <Billing />
           <Faq/>
           <DownloadApp/>
-         
+          </div>
+          <Footer />
         </section>
         
       </section>
-      <Footer />
+      
     </main>
   );
 }

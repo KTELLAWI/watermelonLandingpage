@@ -60,10 +60,10 @@ const Faq: React.FC = () => {
       whileInView="show"
       viewport={{ once: true }}
     >
-         <h2 className="heading2 mb-20 mx-auto">
+         <h2 className="heading2 mb-20 text-center mx-auto">
      الأسئلة <span className="underlined underline-clip">المتكررة</span> 
       </h2>
-         <Accordion type="single" collapsible className="w-2/3 shadow-lg rounded-[50px] px-4 mx-auto" dir='rtl'>
+         <Accordion type="single" collapsible className="w-3/4 shadow-lg rounded-[50px] px-4 mx-auto" dir='rtl'>
        {faqs.map((faq, index) => (
             <AccordionItem key={`faq-${index + 1}`} value={`item-${index + 1}`}>
              <AccordionTrigger>{faq.title}</AccordionTrigger>

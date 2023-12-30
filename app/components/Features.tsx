@@ -34,7 +34,7 @@ const FeatureCard = ({ icon, title, content, index }: featureCardProps) => (
 );
 
 const Features = () => (
-    <section dir="rtl" id="features" className="flex flex-col gap-5">
+    <section dir="rtl" id="features" className="flex flex-col gap-5 mt-28">
         <motion.div
             className="sectionInfo"
             variants={slideIn("left", "tween", 0.2, 1.5)}
@@ -43,12 +43,12 @@ const Features = () => (
             viewport={{ once: true }}
         >
             <h2 className="heading2 text-black text-center mx-auto">
-                من <span className="underlined underline-clip text-black">نحن</span>
+                <span className="underlined underline-clip text-black">الميزات</span>
 
             </h2>
-            <p className="text-center font-tajawal paragraph w-full mt-24 mb-20 max-w-[400px] sm:max-w-[75%] mx-auto sm:text-wrap sm:text-center text-black">
+            {/* <p className="text-center font-tajawal paragraph w-full mt-24 mb-20 max-w-[400px] sm:max-w-[75%] mx-auto sm:text-wrap sm:text-center text-black">
                 وترميلون منصة إلكترونية هدفها جميع أصحاب المتاجر ومقدمي الخدمات في مكانٍ واحد،يتمكنون من خلالها إضافة خدماتهم وإنشاء صفحات خاصة بها، بحيث تصبح بمثابة متجر إلكتروني متكامل لهم، فمن التسجيل على المنصة تصبح لديهم صفحة خاصة تتضمن رفع الخدمات أو المنتجات
-            </p>
+            </p> */}
 
             {/* <Button styles={`mt-10`} /> */}
         </motion.div>

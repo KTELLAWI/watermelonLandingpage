@@ -7,7 +7,7 @@ import GetStarted from "./GetStarted";
 
 const Hero = () => {
   return (
-    <section id="home" className="flex md:flex-row flex-col paddingY bg-white   w-full">
+    <section id="home" className="flex md:flex-row flex-col paddingY creativebanner relative w-full">
       <div className="w-full h-full absolute  z-100 bottom-0 top-0 creativebanner">
       <Image
         src={imageshaper}
@@ -46,10 +46,10 @@ const Hero = () => {
         <h1 className="font-tajawal text-right font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
            
         </h1>
-        <p  className="paragraph2 text-white max-w-[470px] mt-5 font-tajawal  text[25px] text-right">
+        <p  className="paragraph2 text-white max-w-[470px] mt-5 font-tajawal  text[25px] text-right px-2">
         قوِّي عملك، وجمِّع خدماتك - وترميلون، المنصة الرقمية المخصصة لأصحاب المتاجر ومقدمي الخدمات
         </p>
-        <div className="flex  w-fullflex-row  sm:mt-7 mt-3">
+        <div className="flex  w-fullflex-row px-3 sm:mt-7 mt-3">
         <Image
           src={apple}
           alt="google_play"

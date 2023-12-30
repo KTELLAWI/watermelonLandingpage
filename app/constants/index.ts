@@ -23,25 +23,36 @@ import {
   
   export const navLinks = [
     {
-      id: "home",
+      id: "#home",
       title: "الرئيسية",
     },
     {
-      id: "features",
+      id: "#about",
       title: "من نحن",
     },
     {
-      id: "product",
+      id: "#features",
       title: "الميزات",
     },
     {
-      id: "faq",
+      id: "#faq",
       title: "الأسئلة المتكررة",
     },
     {
-      id: "download",
+      id: "#contact",
+      title: "تواصل معنا",
+    },
+    {
+      id: "#download",
       title: "حمل التطبيق",
     },
+   
+    {
+      id: "privacy",
+      title: "سياسة الخصوصية",
+    },
+   
+    
   ];
   
   export const features = [
@@ -145,23 +156,23 @@ import {
       links: [
         {
           name: "الرئيسية",
-          link: "https://www.hoobank.com/content/",
+          link: "#home",
         },
         {
           name: "من نحن",
-          link: "https://www.hoobank.com/how-it-works/",
+          link: "#about",
         },
         {
           name: "الميزات",
-          link: "https://www.hoobank.com/create/",
+          link: "#features",
         },
         {
           name: "سياسة الخصوصية",
-          link: "https://www.hoobank.com/explore/",
+          link: "privacy",
         },
         {
           name: "الشروط والاحكام",
-          link: "https://www.hoobank.com/terms-and-services/",
+          link: "terms",
         },
       ],
     },

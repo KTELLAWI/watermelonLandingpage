@@ -22,16 +22,16 @@ return (
   >
     <div className="flex-1 flex flex-col">
       {/* <h6 className="heading2">انضم إلينا وكُن جزءًا من رواد السوق الرقمي، حيث نقدم لك الفرصة للابتكار والتحول. </h6> */}
-      <p className=" text-white text-[30px]  mt-5">
+      <p className=" text-white text-[30px] text-center mt-5">
       انضم إلينا وكُن جزءًا من رواد السوق الرقمي، حيث نقدم لك الفرصة للابتكار والتحول. 
       </p>
     </div>
 
-    <div className="flexCenter sm:ml-10 ml-0 sm:mt-0 mt-10">
+    {/* <div className="flexCenter sm:ml-10 ml-0 sm:mt-0 mt-10">
       <Button styles={`mt-10`}
       onClick={()=>setToggle(!toggle)} />
     </div>
-   
+    */}
     
     {/* <div className="flex flex-1 justify-end items-center">
         

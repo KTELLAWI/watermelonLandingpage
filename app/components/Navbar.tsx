@@ -88,13 +88,13 @@ const Navbar = () => {
 
   return (
     <motion.nav 
-      className="w-full flex px-3  justify-between items-center navbar "
+      className="w-full flex px-3  justify-between items-center  creativebanner border-none  "
       variants={navVariants}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
     >
-      <div  className="rounded-bl-full py-1 rounded-br-full bg-white w-[180px] flex justify-center items-center"
+      <div  className="rounded-bl-full py-1 rounded-br-full bg-white  w-[180px] flex justify-center items-center"
        
       >
       <Image src={logo} alt="hoobank" width={124} height={32} loading="eager" />
@@ -105,12 +105,16 @@ const Navbar = () => {
             key={nav.id}
             className={`font-tajawal font-semibold cursor-pointer text-[16px] hover:text-secondary ${
               active === nav.title ? "text-secondary" : "text-white"
-            } ${index === navLinks.length - 1 ? "mr-10" : "mr-10"}`}
+            } ${index === navLinks.length - 1 ? "mr-4" : "mr-4"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <a href={`/${nav.id}`}>{nav.title}</a>
           </li>
         ))}
+        <a className=" hidden sm:inline-block default-btn mx-8" href="">
+                                    انضم الينا
+                                    <span className="top-[30px] left-[40px]"></span>
+                                </a>
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
