@@ -160,12 +160,14 @@ const Slider = () => {
   
   const handleNextSlide = () => {
     if (sliderInstance.current) {
+      // @ts-ignore
       sliderInstance.current.next();
     }
   };
 
   const handlePrevSlide = () => {
     if (sliderInstance.current) {
+      // @ts-ignore
       sliderInstance.current.prev();
     }
   };
