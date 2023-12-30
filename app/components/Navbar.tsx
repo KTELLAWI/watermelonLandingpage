@@ -128,7 +128,7 @@ const Navbar = () => {
           onClick={() => setToggle(!toggle)}
         />
 
-        <div
+        <div dir="rtl"
           className={`${
             !toggle ? "hidden" : "flex"
           } p-6 bg-primaryOne absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-50`}
@@ -142,7 +142,7 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <a href={`/${nav.id}`}>{nav.title}</a>
               </li>
             ))}
           </ul>
