@@ -74,9 +74,11 @@
 // export default Slider;
 "use client"
 import React, { useEffect, useRef } from 'react';
-import KeenSlider from 'keen-slider';
+// import KeenSlider from 'keen-slider';
 import 'keen-slider/keen-slider.min.css'; // Import the Keen Slider styles
 import { people01 } from '@/public';
+import KeenSlider, { KeenSliderOptions, KeenSliderHooks } from 'keen-slider';
+
 
 const slides = [
   {
