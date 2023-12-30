@@ -118,7 +118,7 @@ interface SliderProps {
 
 const Slider = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
-  const sliderInstance = useRef<KeenSlider | null>(null);
+  const sliderInstance = useRef<typeof KeenSlider | null>(null);  // Use typeof KeenSlider
 
   useEffect(() => {
     if (sliderRef.current && slides.length > 0) {
