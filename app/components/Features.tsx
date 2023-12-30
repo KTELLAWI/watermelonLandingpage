@@ -6,18 +6,18 @@ import { features2 } from "../constants";
 import Button from "./Button";
 import { demo } from "@/public";
 
-interface featureCardProps {
-    icon: string;
-    title: string;
-    content: string;
-    id: number;
-}
+// interface featureCardProps {
+//     icon: string;
+//     title: string;
+//     content: string;
+//     id: number;
+// }
 
-const FeatureCard = ({ icon, title, content, id }: featureCardProps) => (
+const FeatureCard = ({ icon, title, content,id }: any) => (
     <div className="flex-1">
         <div className="process-item max-w-[50%] ">
         <Image
-        src={icon == "" ? demo : icon}
+        src={icon}
         alt="icon"
         width={0}
         height={0}
@@ -62,7 +62,7 @@ const Features = () => (
                     whileInView="show"
                     viewport={{ once: true }}
                 >
-                    <FeatureCard key={feature.id} {...feature} index={index} />
+                    <FeatureCard key={feature.id} {...feature}  />
                 </motion.div>
             ))}
         </div>
