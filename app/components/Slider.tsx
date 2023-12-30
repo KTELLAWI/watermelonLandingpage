@@ -152,8 +152,8 @@ const Slider = () => {
     }
 
     return () => {
-      if (sliderInstance.current) {
-        sliderInstance.current.destroy();
+      if (keenSlider) {
+        keenSlider.destroy();
       }
     };
   }, [slides]);
