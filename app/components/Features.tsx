@@ -15,7 +15,7 @@ import { demo } from "@/public";
 
 const FeatureCard = ({ icon, title, content,id }: any) => (
     <div className="flex-1">
-        <div className="process-item max-w-[50%] ">
+        <div className="process-item mx-auto  max-w-[50%] ">
         <Image
         src={icon}
         alt="icon"
@@ -34,7 +34,7 @@ const FeatureCard = ({ icon, title, content,id }: any) => (
 );
 
 const Features = () => (
-    <section dir="rtl" id="features" className="flex flex-col gap-5 mt-28">
+    <section dir="rtl" id="features" className="flex flex-col  mt-3 mb-3 shadow-lg py-auto rounded-lg border-primaryOne border-t-8 border-b-8">
         <motion.div
             className="sectionInfo"
             variants={slideIn("left", "tween", 0.2, 1.5)}
@@ -53,7 +53,7 @@ const Features = () => (
             {/* <Button styles={`mt-10`} /> */}
         </motion.div>
 
-        <div dir="rtl" className=" flex-col mx-auto  sm:flex sm:flex-row items-center justify-between gap-5 ">
+        <div dir="rtl" className="flex flex-col mx-auto my-auto  sm:flex sm:flex-row items-center mb-0 justify-between gap-5 ">
             {features2.map((feature, index) => (
                 <motion.div
                     key={feature.id}

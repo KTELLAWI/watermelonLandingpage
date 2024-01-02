@@ -44,8 +44,11 @@ import savetim from "./savetiming.png"
 import payments from "./payments.png"
 import contact from "./contact.png"
 import app1 from "./app.png"
+import phoneicon from "./phoneicon.svg"
+import location from "./maplocation.svg"
+import email from "./email.svg"
 export {
-  appleblack,googlewhite,imageshaper,logowhitew,back2,shops,demo,savetim,payments,contact,app1,
+  appleblack,googlewhite,imageshaper,logowhitew,back2,shops,demo,savetim,payments,contact,app1,phoneicon,location,email,
   airbnb,
   bill,
   binance,

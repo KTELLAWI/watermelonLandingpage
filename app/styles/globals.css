@@ -17,6 +17,7 @@
 * {
   scroll-behavior: smooth;
   font-family: var(--font-tajawal);
+  
 }
 h1 {
   font-family: var(--font-tajawal);
@@ -34,7 +35,7 @@ h1 {
   padding-right: 35px;
   padding-left: 35px;
   max-width: 350px; 
-  min-height: 600px; 
+  min-height: 400px; 
   max-height: 600px; /* Set a maximum height for the paragraph */
   overflow: hidden;
 }
@@ -896,7 +897,7 @@ h1 {
     @apply flex justify-center items-start;
   }
   .paddingX {
-    @apply sm:px-16 px-6;
+    @apply sm:px-10 px-6;
   }
   .paddingY {
     @apply sm:py-16 py-6;

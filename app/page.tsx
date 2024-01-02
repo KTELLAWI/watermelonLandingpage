@@ -34,9 +34,9 @@ export default function Home() {
           <Hero />
         </section>
       </section>
-      <section className=" bg-dimWhite  flexStart">
+      <section className=" flexStart">
         <section className="boxWidth">
-          <div className="paddingX">
+          <div className="paddingX bg-ttu z-0">
           {/* <Stats /> */}
           {/* <Business /> */}
           <Services/>

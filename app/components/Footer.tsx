@@ -1,4 +1,4 @@
-import { apple, googlewhite, logoWhite } from "../../public";
+import { apple, googlewhite, logoWhite, phoneicon } from "../../public";
 import { footerLinks, socialMedia } from "../constants";
 import Image from "next/image";
 // rounded-tl-[18px] rounded-tr-[18px]
@@ -63,15 +63,44 @@ const Footer = () => (
                  />
                  </li>
               ) :
-              (
+
+               link.name == "location" || link.name == "email"  || link.name== "phone" ? (
+
+             
                 <li
                   key={link.name}
                   className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary transition-colors delay-150 cursor-pointer ${
                     index !== footerlink.links.length - 1 ? "mb-1" : "mb-3"
                   }`}
-                >
-                 <a href={`/${link.link}`}>{link.name}</a>
+                > <div className="flex  ">
+                  
+                  <Image
+                  alt=""
+                    // @ts-ignore
+                    src={link?.image}
+                    width={20.86}
+                    height={20.05}
+                    className="object-contain mx-3 "
+                  />
+                 <a>{link.link}</a>
+                 </div>
+
                 </li>
+              )
+              :
+              (
+                <li
+                key={link.name}
+                className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary transition-colors delay-150 cursor-pointer ${
+                  index !== footerlink.links.length - 1 ? "mb-1" : "mb-3"
+                }`}
+              > 
+                
+             
+               <a href={`/${link.link}`}>{link.name}</a>
+              
+
+              </li>
               )
           
               )}

@@ -3,10 +3,11 @@ import { apple, bill, billing1, contact, google } from "../../public";
 import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { contactForm } from "../constants";
 
 const Billing = () => (
-  <section id="contact" className="sectionReverse">
-    <motion.div
+  <section id="contact" className="sectionReverse shadow-lg py-auto  rounded-lg border-primaryOne border-t-8 border-b-8">
+    <motion.div 
       className="sectionImgReverse px-8"
       variants={slideIn("left", "tween", 0.2, 1.5)}
       initial="hidden"
@@ -27,7 +28,7 @@ const Billing = () => (
         //  onLoad={() => window.parent.scrollTo(0, 0)}
 
 
-        src="https://woocommerce-1184222-4160210.cloudwaysapps.com/form"
+        src={contactForm}
         style={{ minWidth: '100%', maxWidth: '100%', height: '450px', border: 'none' }}
       // Enable scrolling
       ></iframe>
@@ -39,7 +40,7 @@ const Billing = () => (
     </motion.div>
 
     <motion.div
-      className="sectionInfo"
+      className="sectionInfo  "
       variants={slideIn("right", "tween", 0.2, 1.5)}
       initial="hidden"
       whileInView="show"

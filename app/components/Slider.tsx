@@ -134,7 +134,7 @@ const Slider = () => {
               '(min-width: 1024px)': {
                 slides: {
                   origin: 'auto',
-                  perView: 1.5,
+                  perView: 1.0,
                   spacing: 32,
                 },
               },

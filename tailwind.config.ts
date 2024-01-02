@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        ttu: "url('https://via.placeholder.com/600x200.png')",
+        ttu: "url('')",
       },
       colors: {
         primary: "#00040f",

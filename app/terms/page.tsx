@@ -21,6 +21,7 @@ import {
   import Services from "../components/Services";
   import Slider from "../components/Slider";
 import { logowhitew } from "@/public";
+import ContactForm from "../components/ContactForm";
   
   export default function Home() {
     return (
@@ -36,13 +37,15 @@ import { logowhitew } from "@/public";
             <Hero />
           </section>
         </section> */}
-        <section  className=" bg-dimWhite paddingX flexStart">
+        <section  className=" bg-dimWhite  flexStart">
           <section className="boxWidth">
+          <div className="paddingX">
+
 <div className="container my-24 mx-auto md:px-6">
   <section className="mb-32">
     <div className="flex flex-wrap">
       <div className="mb-12 w-full shrink-0  grow-0 basis-auto lg:mb-0 lg:w-5/12">
-        <div className="flex relative h-[200px] sm:h-[400px] lg:py-12 ">
+        <div className="flex relative h-[200px] sm:h-[40%] lg:py-12 ">
           <img src="../titlebanner.png"
             className="z-[10] w-full  rounded-lg shadow-lg dark:shadow-black/20 lg:ml-[50px]" alt="image" />
         <div className="w-full absolute flex-col top-[30%]  my-auto lg:ml-[50px]  z-[11]  flex items-center justify-center  ">
@@ -62,6 +65,7 @@ import { logowhitew } from "@/public";
       <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 text-right" dir="rtl">
         <div
           className="flex h-full items-center rounded-lg bg-dimWhite border-primaryOne border-t-8 border-b-8 border-r-1 border-l-1 shadow-lg shadow-gray-300 p-6 text-center text-black lg:pl-12 lg:text-left">
+         {/* <ContactForm url={}/> */}
           <div className="lg:pl-12"> 
             <h2 className=" text-right mb-8 text-3xl font-bold"></h2>
             <p className="mb-8 pb-2 lg:pb-0 text-right text-black">
@@ -150,12 +154,12 @@ import { logowhitew } from "@/public";
     </div>
   </section>
 </div>
-
-           
+</div>
+<Footer />      
           </section>
           
         </section>
-        <Footer />
+       
       </main>
     );
   }

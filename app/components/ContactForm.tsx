@@ -4,7 +4,9 @@ import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const ContactForm = () => (
+const ContactForm = ({url} : {
+  url:string
+}) => (
 //   <section id="contact" className=" w-full">
     <motion.div
       className=" px-0 w-full flex-1"
@@ -27,8 +29,8 @@ const ContactForm = () => (
         //  onLoad={() => window.parent.scrollTo(0, 0)}
 
 
-        src="https://woocommerce-1184222-4160210.cloudwaysapps.com/form"
-        style={{ minWidth: '100%', maxWidth: '100%', height: '450px', border: 'none' }}
+        src={url}
+        style={{ minWidth: '100%', maxWidth: '100%', height: '650px', border: 'none' }}
       // Enable scrolling
       ></iframe>
 

@@ -22,6 +22,7 @@ import {
   import Slider from "../components/Slider";
 import { app1, downloadApp, logowhitew } from "@/public";
 import ContactForm from "../components/ContactForm";
+import { joinUscontactForm } from "../constants";
   
   export default function Home() {
     return (
@@ -37,8 +38,10 @@ import ContactForm from "../components/ContactForm";
             <Hero />
           </section>
         </section> */}
-        <section  className=" bg-dimWhite paddingX flexStart">
+        <section  className=" bg-dimWhite  flexStart">
           <section className="boxWidth">
+          <div className="paddingX">
+
 <div className="container my-24 mx-auto md:px-6">
   <section className="mb-32">
     <div className="flex flex-wrap">
@@ -53,7 +56,7 @@ import ContactForm from "../components/ContactForm";
         alt=""
         width={0}
         height={0}
-        className=" hidden sm:flex sm:w-[70%] sm:h-[70%]  sm:z-[0]"
+        className=" hidden md:inline-block md:w-[70%] md:h-[70%]  md:z-[0]"
       />
      
         </div>
@@ -62,15 +65,16 @@ import ContactForm from "../components/ContactForm";
       </div>
 
       <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 text-right" dir="rtl">
-
+      
         <div
-          className="flex h-full items-center rounded-lg pl-2 bg-dimWhite border-primaryOne border-t-8 border-b-8 border-r-1 border-l-1 shadow-lg shadow-gray-300 p-1 text-center text-black lg:pl-1 lg:text-left">
-         <ContactForm/>
+          className="flex h-full items-center w-full rounded-lg pl-2 z-[25] bg-dimWhite border-primaryOne border-t-8 border-b-8 border-r-1 border-l-1 shadow-lg shadow-gray-300 p-1 text-center text-black lg:pl-1 lg:text-left">
+        <ContactForm url = {joinUscontactForm} />
           <div className="lg:pl-1"> 
-            <h2 className=" text-right mb-8 text-3xl font-bold"></h2>
+
+            {/* <h2 className=" text-right mb-8 text-3xl font-bold"></h2>
             <p className="mb-8 pb-2 lg:pb-0 text-right text-black">
              
-            </p>
+            </p> */}
             {/* <ContactForm/>
             <ContactForm/> */}
             {/* <div className="mx-auto mb-8 flex flex-col md:flex-row md:justify-around xl:justify-start">
@@ -156,12 +160,12 @@ import ContactForm from "../components/ContactForm";
     </div>
   </section>
 </div>
-
-           
+</div>
+<Footer />   
           </section>
           
         </section>
-        <Footer />
+        
       </main>
     );
   }
