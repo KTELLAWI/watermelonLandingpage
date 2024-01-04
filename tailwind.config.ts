@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        ttu: "url('')",
+        ttu: "url('/public/bannerbackground.png')",
       },
       colors: {
         primary: "#00040f",

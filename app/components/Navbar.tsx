@@ -81,6 +81,7 @@ import { navVariants } from "../styles/animations";
 import Image from "next/image";
 import { close, logo, menu } from "../../public";
 import { navLinks } from "../constants";
+import LangluageSelector from "./LanguageSelector";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -117,6 +118,7 @@ const Navbar = () => {
                                     انضم الينا
                                     <span className="top-[30px] left-[40px]"></span>
                                 </a>
+                                <LangluageSelector/>
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">

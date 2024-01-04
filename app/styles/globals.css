@@ -646,7 +646,7 @@ h1 {
     height: 70px;
     width: 70px;
     line-height: 70px;
-    background-color: $main-color; /* Replace with actual color value */
+    background-color: #0F9887; /* Replace with actual color value */
     border-radius: 100px;
     left: 0;
     right: 0;
@@ -787,7 +787,7 @@ h1 {
 
 .single-fun-fact h3 {
   position: relative;
-  color: $white-color; /* Assuming $white-color is defined elsewhere */
+  color: white; /* Assuming $white-color is defined elsewhere */
   margin-bottom: 5px;
   line-height: 1;
   font-size: 50px;
