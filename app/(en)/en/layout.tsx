@@ -4,6 +4,8 @@ import "../../styles/globals.css";
 import { cn } from "@/lib/utils";
 import { Footer, Navbar } from "../../components";
 import Intro from "../../components/Intro";
+import EnFooter from "@/app/components/EnFooter";
+import EnNavbar from "@/app/components/EnNavbar";
 //import localFont from 'next/font/local'
 
 const tajawal = Tajawal({
@@ -39,7 +41,7 @@ export default function CustomLayout({
           <Intro />
           <header className=" flexCenter ">
             <nav className="boxWidth  z-10 ">
-              <Navbar />
+              <EnNavbar/>
             </nav>
           </header>
           <section className=" flexStart">
@@ -47,7 +49,7 @@ export default function CustomLayout({
 
               {children}
 
-              <Footer />
+              <EnFooter />
             </section>
 
           </section>

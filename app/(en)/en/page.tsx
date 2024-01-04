@@ -1,4 +1,5 @@
 
+import EnHero from "@/app/components/EnHero";
 import {
   Navbar,
   Hero,
@@ -20,11 +21,38 @@ import Sectionbanner from "../../components/Sectionbanner";
 import Services from "../../components/Services";
 import Slider from "../../components/Slider";
 import CustomLayout from "./layout";
+import EnContact from "@/app/components/enContact";
 
 export default function Home() {
   return (
 
-   <>gggg</>
+    <>
+      <section className=" flexStart ">
+        <section className="boxWidth creativebanner">
+          <EnHero/>
+        </section>
+      </section>
+      <div className="paddingX">
+        {/* <Stats /> */}
+        {/* <Business /> */}
+        <Services />
+        <EnContact/>
+        {/* <Sectionbanner/> */}
+        {/* <Features /> */}
+        {/* <Billing />
+          <CardDeal />
+          <ManyShops/> */}
+        {/* <Testimonials /> */}
+        {/* <Slider /> */}
+        {/* <Clients /> */}
+        {/* <CTA />
+        <Billing />
+        <Faq />
+        <DownloadApp /> */}
+
+
+      </div>
+    </>
 
   );
 }

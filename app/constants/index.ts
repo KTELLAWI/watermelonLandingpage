@@ -60,6 +60,40 @@ export const navLinks = [
 
 
 ];
+export const enavLinks = [
+  {
+    id: "#home",
+    title: "Home",
+  },
+  {
+    id: "#about",
+    title: "About us",
+  },
+  {
+    id: "#features",
+    title: "Features",
+  },
+  {
+    id: "#faq",
+    title: "FAQ",
+  },
+  {
+    id: "#contact",
+    title: "Contact us",
+  },
+  {
+    id: "#download",
+    title: "Download App",
+  },
+
+  {
+    id: "privacy",
+    title: "Privacy policy",
+  },
+
+
+];
+
 
 export const features = [
   {
@@ -215,6 +249,77 @@ export const footerLinks = [
   },
   {
     title: "حمل التطبيق",
+    links: [
+      {
+        name: "googleplay",
+        link: "",
+      },
+      {
+        name: "apple",
+        link: "",
+      },
+    ],
+  },
+];
+export const efooterLinks = [
+  {
+    title: "Quick Links",
+    links: [
+      {
+        name: "Home",
+        link: "#home",
+      },
+      {
+        name: "About Us",
+        link: "#about",
+      },
+      {
+        name: "Features",
+        link: "#features",
+      },
+      {
+        name: "Privacy Policy ",
+        link: "privacy",
+      },
+      {
+        name: "Terms & Conditions",
+        link: "terms",
+      },
+      {
+        name: "Careers",
+        link: "employment",
+      },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      {  name: "email",
+        link: "info@watermelon.sa",
+        image:email,
+      },
+      {
+        name: "phone",
+        link: "00905456789088",
+        image:phoneicon,
+      },
+      {
+        name : "location",
+        link: "Al-Riyadh - SaudiArabia",
+        image:location,
+      },
+      // {
+      //   name: "سياسة الخصوصية",
+      //   link: "https://www.hoobank.com/blog/",
+      // },
+      // {
+      //   name: "الشروط والاحكام",
+      //   link: "https://www.hoobank.com/newsletters/",
+      // },
+    ],
+  },
+  {
+    title: "Download App",
     links: [
       {
         name: "googleplay",
