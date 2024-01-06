@@ -19,6 +19,7 @@ import ManyShops from "../components/ManyShops";
 import Sectionbanner from "../components/Sectionbanner";
 import Services from "../components/Services";
 import Slider from "../components/Slider";
+import { enfeedback, feedback } from "../constants";
 
 export default function Home() {
   return (
@@ -33,13 +34,13 @@ export default function Home() {
         {/* <Stats /> */}
         {/* <Business /> */}
         <Services />
-        {/* <Sectionbanner/> */}
+        <Sectionbanner/>
         <Features />
         {/* <Billing />
           <CardDeal />
           <ManyShops/> */}
         {/* <Testimonials /> */}
-        <Slider />
+        <Slider slides={enfeedback}/>
         {/* <Clients /> */}
         <CTA />
         <Billing />

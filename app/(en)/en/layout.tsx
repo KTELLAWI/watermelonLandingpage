@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Tajawal, Cairo_Play, Abel, Cairo } from "next/font/google";
+import { Poppins, Tajawal, Cairo_Play, Abel, Cairo, } from "next/font/google";
 import "../../styles/globals.css";
 import { cn } from "@/lib/utils";
 import { Footer, Navbar } from "../../components";
@@ -8,9 +8,9 @@ import EnFooter from "@/app/components/EnFooter";
 import EnNavbar from "@/app/components/EnNavbar";
 //import localFont from 'next/font/local'
 
-const tajawal = Tajawal({
-  subsets: ["arabic", "latin"],
-  weight: ["200", "300", "400", "500", "700", "800", "900"],
+const tajawal = Abel({
+  subsets: [ "latin"],
+   weight: ["400"],
 
   variable: "--font-tajawal"
 

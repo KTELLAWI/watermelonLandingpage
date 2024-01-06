@@ -22,6 +22,13 @@ import Services from "../../components/Services";
 import Slider from "../../components/Slider";
 import CustomLayout from "./layout";
 import EnContact from "@/app/components/enContact";
+import EnAboutus from "@/app/components/EnAboutus";
+import EnFeatures from "@/app/components/EnFeatures";
+import { enfeedback } from "@/app/constants";
+import EnSlider from "@/app/components/EnSlider";
+import EnCTA from "@/app/components/EnCTA";
+import EnFaq from "@/app/components/EnFaq";
+import EnDownloadApp from "@/app/components/EnDownloadApp";
 
 export default function Home() {
   return (
@@ -35,20 +42,18 @@ export default function Home() {
       <div className="paddingX">
         {/* <Stats /> */}
         {/* <Business /> */}
-        <Services />
+       <EnAboutus/>
+        
+        <Sectionbanner/>
+        <EnFeatures />
+      
+        <EnSlider  slides={enfeedback}/>
+      
+        <EnCTA />
         <EnContact/>
-        {/* <Sectionbanner/> */}
-        {/* <Features /> */}
-        {/* <Billing />
-          <CardDeal />
-          <ManyShops/> */}
-        {/* <Testimonials /> */}
-        {/* <Slider /> */}
-        {/* <Clients /> */}
-        {/* <CTA />
-        <Billing />
-        <Faq />
-        <DownloadApp /> */}
+       
+        <EnFaq />
+        <EnDownloadApp />
 
 
       </div>

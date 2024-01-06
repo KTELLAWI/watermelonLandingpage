@@ -78,6 +78,7 @@ import React, { useEffect, useRef } from 'react';
 import 'keen-slider/keen-slider.min.css'; // Import the Keen Slider styles
 import { people01 } from '@/public';
 import KeenSlider, { KeenSliderOptions, KeenSliderHooks } from 'keen-slider';
+import { StaticImageData } from 'next/image';
 
 
 const slides = [
@@ -108,15 +109,18 @@ const slides = [
     // Add more slide data as needed
   ];
 interface SlideContent {
+  id:string;
   quote: string;
   author: string;
+  title:string;
+  img:StaticImageData;
 }
 
 interface SliderProps {
   slides: SlideContent[];
 }
 
-const Slider = () => {
+const Slider = (sildes:SliderProps) => {
   const sliderRef = useRef<HTMLDivElement>(null);
   const sliderInstance = useRef<typeof KeenSlider | null>(null);  // Use typeof KeenSlider
 

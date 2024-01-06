@@ -3,7 +3,7 @@ import { apple, bill, billing1, contact, google } from "../../public";
 import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { contactForm } from "../constants";
+import { contactForm, encontacForm } from "../constants";
 
 const EnContact = () => (
   <section id="contact" className="sectionReverse shadow-lg py-auto  rounded-lg border-primaryOne border-t-8 border-b-8">
@@ -28,7 +28,7 @@ const EnContact = () => (
         //  onLoad={() => window.parent.scrollTo(0, 0)}
 
 
-        src={contactForm}
+        src={encontacForm}
         style={{ minWidth: '100%', maxWidth: '100%', height: '450px', border: 'none' }}
       // Enable scrolling
       ></iframe>

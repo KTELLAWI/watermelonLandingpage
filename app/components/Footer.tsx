@@ -53,14 +53,15 @@ const Footer = () => (
                  className={`font-tajawal font-normal  text-right text-[16px] leading-[24px] text-dimWhite hover:text-secondary transition-colors delay-150 cursor-pointer ${
                    index !== footerlink.links.length - 1 ? "mb-4" : "mb-1"
                  }`}
-               >
+               >    <a href={link.link}>
                    <Image
                    src={ link.name == "apple" ? apple : googlewhite}
-                   alt="google_play"
+                   alt=""
                    width={128.86}
                    height={42.05}
                    className="object-contain  cursor-pointer"
                  />
+                 </a>
                  </li>
               ) :
 

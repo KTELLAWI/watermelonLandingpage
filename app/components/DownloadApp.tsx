@@ -3,6 +3,7 @@ import { apple, appleblack, bill, downloadApp, google, qrcode } from "../../publ
 import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { applestoreUrl, googleplayStoreUrl } from "../constants";
 
 const DownloadApp = () => (
   <section id="download" className="sectionReverse">
@@ -49,6 +50,7 @@ const DownloadApp = () => (
         />
 
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
+        <a href={applestoreUrl}>
         <Image
           src={appleblack}
           alt="google_play"
@@ -56,6 +58,8 @@ const DownloadApp = () => (
           height={42.05}
           className="object-contain mr-5 cursor-pointer"
         />
+      </a>
+      <a href={googleplayStoreUrl}>
         <Image
           src={google}
           alt="google_play"
@@ -63,6 +67,7 @@ const DownloadApp = () => (
           height={43.08}
           className="object-contain cursor-pointer"
         />
+        </a>
       </div>
     </motion.div>
   </section>

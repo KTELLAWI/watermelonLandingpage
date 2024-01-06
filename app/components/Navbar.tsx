@@ -153,6 +153,7 @@ const Navbar = () => {
                                     انضم الينا
                                     <span className="top-[30px] left-[40px]"></span>
                                 </a>
+                                <LangluageSelector/>
           </ul>
         </div>
       </div>

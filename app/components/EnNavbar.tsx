@@ -116,7 +116,7 @@ const EnNavbar = () => {
           </li>
         ))}
         <a className=" hidden sm:inline-block default-btn mx-8" href="/en/joinus">
-                                    انضم الينا
+                                    Join us
                                     <span className="top-[30px] left-[40px]"></span>
                                 </a>
                                 <LangluageSelector/>
@@ -153,9 +153,10 @@ const EnNavbar = () => {
               </li>
             ))}
             <a className=" hidden sm:inline-block default-btn mt-2" href="/en/joinus">
-                                    انضم الينا
+                                    Join us
                                     <span className="top-[30px] left-[40px]"></span>
                                 </a>
+                                <LangluageSelector/>
           </ul>
         </div>
       </div>

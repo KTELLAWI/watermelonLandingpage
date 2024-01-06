@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { slideIn } from "../styles/animations";
 import { apple, back2, discount, googlewhite, imageshaper, robot, robot2 } from "../../public";
 import GetStarted from "./GetStarted";
+import { applestoreUrl, enHeroDescription, googleplayStoreUrl } from "../constants";
+import Link from "next/link";
 
 const EnHero = () => {
   return (
@@ -47,9 +49,10 @@ const EnHero = () => {
            
         </h1>
         <p  className="paragraph2 text-white max-w-[470px] mt-5 font-tajawal  text[25px] mx-auto px-2">
-        قوِّي عملك، وجمِّع خدماتك - وترميلون، المنصة الرقمية المخصصة لأصحاب المتاجر ومقدمي الخدمات
+        {enHeroDescription}
         </p>
-        <div className="flex  w-fullflex-row px-3 sm:mt-7 mx-auto mt-3">
+        <div className="flex  w-fullflex-row px-3 space-x-2 sm:mt-7 mx-auto mt-3">
+        <Link href={applestoreUrl}>
         <Image
           src={apple}
           alt="google_play"
@@ -57,13 +60,16 @@ const EnHero = () => {
           height={0}
           className="object-contain w-[100%] h-[100%] mr-5 cursor-pointer"
         />
+        </Link>
+        <Link href={googleplayStoreUrl}>
         <Image
         src={googlewhite}
         alt="billing"
         width={0}
         height={0}
-        className="w-[100%] h-[100%] relative z-[5]"
+        className="w-[100%] h-[100%] mr-5 z-[5]"
       />
+       </Link>
       </div>
       </motion.div>
 
