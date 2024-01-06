@@ -53,7 +53,7 @@ export const enFaqs = [
     contents: 'You can track your order after logging into your account. Go to the "My Orders" section to see the order status and tracking details.',
   },
   {
-    title: 'Can I return a product if I dont like it?',
+    title: 'Can I return a product if I dont want it?',
     contents: 'Yes, you can return the product if you dont like it according to the return policy. Contact customer service for further assistance.',
   },
   {
