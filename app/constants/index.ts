@@ -35,8 +35,8 @@ export const enprivacyPage = "https://woocommerce-1184222-4160210.cloudwaysapps.
 export const applestoreUrl ="https://apps.apple.com/us/app/watermelon-%D9%88%D8%AA%D8%B1%D9%85%D9%8A%D9%84%D9%88%D9%86/id1593303723";
 export const googleplayStoreUrl ="https://apps.apple.com/us/app/watermelon-%D9%88%D8%AA%D8%B1%D9%85%D9%8A%D9%84%D9%88%D9%86/id1593303723";
 
-export const enCompanyNameFirstpart :strig = "Water";
-export const enCompanyNameSecondpart :strig = "melon";
+export const enCompanyNameFirstpart :string = "Water";
+export const enCompanyNameSecondpart :string = "melon";
 export const enHeroDescription :string = "Empower your business, and consolidate your services - with Termilon, the digital platform tailored for store owners and service providers.";
 export const enAboutusDescription = "Watermelon is an electronic platform aimed at all store owners and service providers, bringing them together in one place. Through Termilon, they can add their services and create dedicated pages, effectively turning it into a comprehensive online store for them. Upon registration on the platform, they obtain a personal page where they can showcase and upload their services or products.";
 export const entestimonilasheadertitle = "Don't just take our word for it; instead, verify for yourself and explore more.";
