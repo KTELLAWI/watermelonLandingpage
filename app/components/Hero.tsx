@@ -5,7 +5,6 @@ import { slideIn } from "../styles/animations";
 import { apple, back2, googlewhite, imageshaper, robot2 } from "../../public";
 import { CompanyNameFirstpart, CompanyNameSecondpart, HeroDescription, applestoreUrl, googleplayStoreUrl } from "../constants";
 import Link from "next/link";
-import { robot } from "@/out";
 
 const Hero = () => {
   return (

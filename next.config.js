@@ -3,7 +3,7 @@ const nextConfig = {
     images: {
         domains: ['*'], // Allow loading images from any domain
       },
-    // output: 'export',
+    output: 'export',
 
 }
 
