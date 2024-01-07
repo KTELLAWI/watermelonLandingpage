@@ -3,12 +3,7 @@ import Image from "next/image";
 import {
   Navbar,
   Hero,
-  Stats,
-  Billing,
-  Business,
-  CardDeal,
-  Testimonials,
-  Clients,
+
   CTA,
   Footer,
 } from "../../../components";
