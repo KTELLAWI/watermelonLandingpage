@@ -1,85 +1,12 @@
-// "use client"
-// import React, { useEffect, useRef } from 'react';
-// import KeenSlider from 'keen-slider';
-// import 'keen-slider/keen-slider.min.css'; // Import the Keen Slider styles
-
-// interface SlideContent {
-//   quote: string;
-//   author: string;
-// }
-
-// interface SliderProps {
-//   slides: SlideContent[];
-// }
-
-// const slides = [
-//     {
-//       quote: "No, Rose, they are not breathing...",
-//       author: "Micuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuhael Scott",
-//     },
-//     {
-//         quote: "No, Rosjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjt breathing...",
-//         author: "Mgggggggggggggggggggggl Scott",
-//       },
-//       {
-//         quote: "No, Rmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmme, they are not breathing...",
-//         author: "Micbbbbbbbbbbbbbbbbbbbbbbbbbbbbbhael Scott",
-//       },
-//     // Add more slide data as needed
-//   ];
-// const Slider = () => {
-//   const sliderRef = useRef<HTMLDivElement>(null);
-
-//   useEffect(() => {
-//     if (sliderRef.current) {
-//       const slider = new KeenSlider(sliderRef.current, {
-//         // Add Keen Slider options here if needed
-//       });
-
-//       // Ensure to destroy the slider when the component unmounts
-//       return () => {
-//         slider.destroy();
-//       };
-//     }
-//   }, [slides]);
-
-//   return (
-//     <div ref={sliderRef} className="keen-slider">
-//       {slides.map((slide, index) => (
-//         <div key={index} className="keen-slider__slide">
-//           <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
-//             <div>
-//               <div className="flex gap-0.5 text-green-500">
-//                 {/* Render your SVG icons here */}
-//               </div>
-
-//               <div className="mt-4">
-//                 <p className="text-2xl font-bold text-rose-600 sm:text-3xl">Stayin' Alive</p>
-//                 <p className="mt-4 leading-relaxed text-gray-700">
-//                   {slide.quote}
-//                 </p>
-//               </div>
-//             </div>
-
-//             <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-//               &mdash; {slide.author}
-//             </footer>
-//           </blockquote>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
 
 // export default Slider;
 "use client"
 import React, { useEffect, useRef } from 'react';
 // import KeenSlider from 'keen-slider';
 import 'keen-slider/keen-slider.min.css'; // Import the Keen Slider styles
-import { people01 } from '@/public';
 import KeenSlider, { KeenSliderOptions, KeenSliderHooks } from 'keen-slider';
 import { StaticImageData } from 'next/image';
-import { entestimonilasheadertitle } from '../constants';
+import { enfeedback, entestimonilasheadertitle } from '../constants';
 
 
 // const slides = [
@@ -121,12 +48,12 @@ interface SliderProps {
     slides: SlideContent[];
 }
 
-const EnSlider = ({ slides }: SliderProps) => {
+const EnSlider = () => {
     const sliderRef = useRef<HTMLDivElement>(null);
     const sliderInstance = useRef<typeof KeenSlider | null>(null);  // Use typeof KeenSlider
 
     useEffect(() => {
-        if (sliderRef.current && slides.length > 0) {
+        if (sliderRef.current && enfeedback.length > 0) {
             sliderInstance.current = new KeenSlider(sliderRef.current,
                 {
                     loop: true,
@@ -161,7 +88,7 @@ const EnSlider = ({ slides }: SliderProps) => {
             //   sliderInstance.current.destroy();
             // }
         };
-    }, [slides]);
+    }, [enfeedback]);
 
     const handleNextSlide = () => {
         if (sliderInstance.current) {
@@ -244,7 +171,7 @@ const EnSlider = ({ slides }: SliderProps) => {
                     <div className="-mx-6 lg:col-span-2 lg:mx-0">
                         {/* Render the Slider component here */}
                         <div ref={sliderRef} className="keen-slider" id="keen-slider">
-                            {slides.map((slide, index) => (
+                            {enfeedback.map((slide, index) => (
                                 <div key={index} className="keen-slider__slide rounded-2xl 100 p-5">
                                     <blockquote className="flex h-full  flex-col justify-between bg-white mx-auto rounded-2xl p-6 shadow-lg sm:p-8 lg:p-12 overflow-hidden">
                                         <div>

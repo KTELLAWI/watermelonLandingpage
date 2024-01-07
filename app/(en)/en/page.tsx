@@ -3,12 +3,6 @@ import EnHero from "@/app/components/EnHero";
 import {
   Navbar,
   Hero,
-  Stats,
-  Billing,
-  Business,
-  CardDeal,
-  Testimonials,
-  Clients,
   CTA,
   Footer,
 } from "../../components";
@@ -16,7 +10,6 @@ import DownloadApp from "../../components/DownloadApp";
 import Faq from "../../components/Faq";
 import Features from "../../components/Features";
 import Intro from "../../components/Intro";
-import ManyShops from "../../components/ManyShops";
 import Sectionbanner from "../../components/Sectionbanner";
 import Services from "../../components/Aboutus";
 import Slider from "../../components/TestimonialSlider";
@@ -40,14 +33,13 @@ export default function Home() {
         </section>
       </section>
       <div className="paddingX">
-        {/* <Stats /> */}
-        {/* <Business /> */}
+
         <EnAboutus />
 
         <Sectionbanner />
         <EnFeatures />
 
-        <EnSlider slides={enfeedback} />
+        <EnSlider/>
 
         <EnCTA />
         <EnContact />
