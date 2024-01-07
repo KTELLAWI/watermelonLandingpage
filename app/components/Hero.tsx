@@ -11,7 +11,7 @@ const Hero = () => {
     <section id="home" className="flex md:flex-row flex-col paddingY creativebanner relative w-full">
       <div className="w-full h-full absolute  z-100 bottom-0 top-0 creativebanner">
         <Image
-          src="/homeshape.png" //{imageshaper}
+          src={imageshaper}
           alt=""
           width={0}
           height={0}
