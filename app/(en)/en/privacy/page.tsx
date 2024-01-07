@@ -11,7 +11,6 @@ import DownloadApp from "../../../components/DownloadApp";
 import Faq from "../../../components/Faq";
 import Features from "../../../components/Features";
 import Intro from "../../../components/Intro";
-import ManyShops from "../../../components/ManyShops";
 import Sectionbanner from "../../../components/Sectionbanner";
 import Services from "../../../components/Aboutus";
 import Slider from "../../../components/TestimonialSlider";
