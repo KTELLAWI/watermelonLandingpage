@@ -672,36 +672,12 @@ h1 {
     margin-top: 38px;
 }
 
-.testimonial-slider .testimonial-single-item .testimonial-info h3 {
-    font-size: 22px;
-    color: $black-color; /* Replace with actual color value */
-    margin: 0 0 5px 0;
-}
 
-.testimonial-slider .testimonial-single-item .testimonial-info span {
-    font-size: 16px;
-    font-weight: 400;
-    color: $paragraph-color; /* Replace with actual color value */
-}
 
-.testimonial-slider .testimonial-single-item .testimonial-content .icon {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
-.testimonial-slider .testimonial-single-item .testimonial-content .icon i {
-    color: $main-color; /* Replace with actual color value */
-}
 
-.testimonial-slider .testimonial-single-item .testimonial-content .icon i::before {
-    font-size: 35px;
-    line-height: normal;
-}
 
-.testimonial-slider .testimonial-single-item .testimonial-content p {
-    margin: 0;
-    font-style: italic;
-}
+
 /* 
 .testimonial-slider.owl-theme .owl-nav {
     opacity: 0;
@@ -886,6 +862,9 @@ h1 {
   }
   .paragraph {
     @apply font-tajawal font-semibold  text-[18px] leading-[44px];
+  }
+  .paragraph3 {
+    @apply leading-[44px];
   }
   .paragraph2 {
     @apply font-tajawal font-semibold  text-[25px] leading-[44px];

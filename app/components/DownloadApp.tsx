@@ -3,7 +3,7 @@ import { apple, appleblack, bill, downloadApp, google, qrcode } from "../../publ
 import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { applestoreUrl, googleplayStoreUrl } from "../constants";
+import { DownloadAppDescriptoption, applestoreUrl, googleplayStoreUrl } from "../constants";
 
 const DownloadApp = () => (
   <section id="download" className="sectionReverse">
@@ -39,7 +39,7 @@ const DownloadApp = () => (
         حمل <span className="underlined underline-clip">التطبيق</span>   <br className="sm:block hidden" /> 
       </h2>
       <p className="paragraph max-w-[470px] mt-5 text-black " dir="rtl" >
-      اكتشف الإمكانيات - قم بالتحميل الآن لتجربة الميزات السلسة لتطبيقنا
+      {DownloadAppDescriptoption}
       </p>
       <Image
           src={qrcode}

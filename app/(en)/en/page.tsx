@@ -18,8 +18,8 @@ import Features from "../../components/Features";
 import Intro from "../../components/Intro";
 import ManyShops from "../../components/ManyShops";
 import Sectionbanner from "../../components/Sectionbanner";
-import Services from "../../components/Services";
-import Slider from "../../components/Slider";
+import Services from "../../components/Aboutus";
+import Slider from "../../components/TestimonialSlider";
 import CustomLayout from "./layout";
 import EnContact from "@/app/components/enContact";
 import EnAboutus from "@/app/components/EnAboutus";
@@ -36,22 +36,22 @@ export default function Home() {
     <>
       <section className=" flexStart ">
         <section className="boxWidth creativebanner">
-          <EnHero/>
+          <EnHero />
         </section>
       </section>
       <div className="paddingX">
         {/* <Stats /> */}
         {/* <Business /> */}
-       <EnAboutus/>
-        
-        <Sectionbanner/>
+        <EnAboutus />
+
+        <Sectionbanner />
         <EnFeatures />
-      
-        <EnSlider  slides={enfeedback}/>
-      
+
+        <EnSlider slides={enfeedback} />
+
         <EnCTA />
-        <EnContact/>
-       
+        <EnContact />
+
         <EnFaq />
         <EnDownloadApp />
 

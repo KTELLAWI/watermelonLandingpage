@@ -27,7 +27,7 @@ const FeatureCard = ({ icon, title, content, index }: featureCardProps) => (
         {/* <i className="flaticon-data-analytics"></i> */}
     </div>
     {/* <h3>Data Analytics</h3> */}
-    <p>{content} </p>
+    <p className=" font-semibold ">{content} </p>
     {/* <div className="services-btn">
         <a href="single-services.html" className="services-btn-one">
             Read More

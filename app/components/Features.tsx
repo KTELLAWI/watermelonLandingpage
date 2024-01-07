@@ -2,9 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn, slideIn } from "../styles/animations";
-import { features2 } from "../constants";
-import Button from "./Button";
-import { demo } from "@/public";
+import { features,  } from "../constants";
 
 // interface featureCardProps {
 //     icon: string;
@@ -54,7 +52,7 @@ const Features = () => (
         </motion.div>
 
         <div dir="rtl" className="flex flex-col mx-auto my-auto  sm:flex sm:flex-row items-center mb-0 justify-between gap-5 ">
-            {features2.map((feature, index) => (
+            {features.map((feature, index) => (
                 <motion.div
                     key={feature.id}
                     variants={fadeIn("left", "spring", index * 0.5, 1)}

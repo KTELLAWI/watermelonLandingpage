@@ -1,11 +1,11 @@
 "use client";
-import { apple, bill, billing1, contact, google } from "../../public";
+import { apple, contact, google } from "../../public";
 import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { contactForm } from "../constants";
 
-const Billing = () => (
+const Contact = () => (
   <section id="contact" className="sectionReverse shadow-lg py-auto  rounded-lg border-primaryOne border-t-8 border-b-8">
     <motion.div 
       className="sectionImgReverse px-8"
@@ -81,4 +81,4 @@ const Billing = () => (
   </section>
 );
 
-export default Billing;
+export default Contact;

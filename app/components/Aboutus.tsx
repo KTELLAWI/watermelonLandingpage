@@ -2,8 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn, slideIn } from "../styles/animations";
-import { features } from "../constants";
-import Button from "./Button";
+import { AboutusDescription, aboutfeatures, features } from "../constants";
 
 interface featureCardProps {
   icon: string;
@@ -38,7 +37,7 @@ const FeatureCard = ({ icon, title, content, index }: featureCardProps) => (
     </div>
 );
 
-const Services = () => (
+const Aboutus = () => (
   <section dir="rtl" id="about" className="flex flex-col gap-5">
     <motion.div
       className="sectionInfo"
@@ -52,14 +51,14 @@ const Services = () => (
         
       </h2>
       <p className="text-center font-tajawal paragraph w-full mt-24 mb-10 max-w-[400px] sm:max-w-[75%] mx-auto sm:text-wrap sm:text-center text-black">
-      وترميلون منصة إلكترونية هدفها جميع أصحاب المتاجر ومقدمي الخدمات في مكانٍ واحد،يتمكنون من خلالها إضافة خدماتهم وإنشاء صفحات خاصة بها، بحيث تصبح بمثابة متجر إلكتروني متكامل لهم، فمن التسجيل على المنصة تصبح لديهم صفحة خاصة تتضمن رفع الخدمات أو المنتجات
+      {AboutusDescription}
       </p>
 
       {/* <Button styles={`mt-10`} /> */}
     </motion.div>
 
     <div dir="rtl" className=" flex-col mx-auto  sm:flex sm:flex-row items-center justify-between gap-5 ">
-      {features.map((feature, index) => (
+      {aboutfeatures.map((feature, index) => (
         <motion.div
           key={feature.id}
           variants={fadeIn("left", "spring", index * 0.5, 1)}
@@ -74,4 +73,4 @@ const Services = () => (
   </section>
 );
 
-export default Services;
+export default Aboutus;

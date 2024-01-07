@@ -1,5 +1,5 @@
 import { apple, googlewhite, logoWhite, phoneicon } from "../../public";
-import { footerLinks, socialMedia } from "../constants";
+import { footerLinks, footerunderlogoTitle, socialMedia } from "../constants";
 import Image from "next/image";
 // rounded-tl-[18px] rounded-tr-[18px]
 const Footer = () => (
@@ -33,7 +33,7 @@ const Footer = () => (
           className="object-contain"
         />
         <p className="font-tajawal mt-4 max-w-[312px] leading-4 justify-center text-white align-middle items-center sm:items-start sm:justify-start">
-        المنصة الرقمية المخصصة لأصحاب المتاجر ومقدمي الخدمات
+        {footerunderlogoTitle}
         </p>
       </div>
 

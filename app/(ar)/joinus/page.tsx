@@ -18,11 +18,12 @@ import Features from "../../components/Features";
 import Intro from "../../components/Intro";
 import ManyShops from "../../components/ManyShops";
 import Sectionbanner from "../../components/Sectionbanner";
-import Services from "../../components/Services";
-import Slider from "../../components/Slider";
+import Services from "../../components/Aboutus";
+import Slider from "../../components/TestimonialSlider";
 import { app1, downloadApp, logowhitew } from "@/public";
-import ContactForm from "../../components/ContactForm";
+import ContactForm from "../../components/EmbededComponent";
 import { joinUscontactForm } from "../../constants";
+import EmbededComponent from "../../components/EmbededComponent";
 
 export default function Home() {
   return (
@@ -55,93 +56,8 @@ export default function Home() {
 
               <div
                 className="flex h-full items-center w-full rounded-lg pl-2 z-[25] bg-dimWhite border-primaryOne border-t-8 border-b-8 border-r-1 border-l-1 shadow-lg shadow-gray-300 p-1 text-center text-black lg:pl-1 lg:text-left">
-                <ContactForm url={joinUscontactForm} />
-                <div className="lg:pl-1">
-
-                  {/* <h2 className=" text-right mb-8 text-3xl font-bold"></h2>
-            <p className="mb-8 pb-2 lg:pb-0 text-right text-black">
-             
-            </p> */}
-                  {/* <ContactForm/>
-            <ContactForm/> */}
-                  {/* <div className="mx-auto mb-8 flex flex-col md:flex-row md:justify-around xl:justify-start">
-              <p className="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0 xl:mr-20">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                  stroke="currentColor" className="mr-2 h-5 w-5">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Best team
-              </p>
-
-              <p className="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0 xl:mr-20">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                  stroke="currentColor" className="mr-2 h-5 w-5">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Best quality
-              </p>
-
-              <p className="mx-auto mb-2 flex items-center md:mx-0 lg:mb-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                  stroke="currentColor" className="mr-2 h-5 w-5">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Best experience
-              </p>
-            </div> */}
-
-
-                  {/* <p className="text-right text-black">
-            عزيزي العميل ، نود أن نقدم لك نظرة عامة يمكن فهمها بسهولة عن سياسة الخصوصية الخاصة بتطبيق وترميلون الموجودة في هذه الصفحة، وفي حال لم تكن موافق على أي من بنود هذه السياسة فإنه يتوجب عليك عدم استخدام تطبيق وترميلون. إن استخدامك لتطبيق وترميلون يعني ضمنيا موافقتك على جميع البنود والأحكام الموجودة في سياسة الخصوصية.
-
-.
-
-حق التعديل
-
-نحتفظ بحقنا في تحديث سياسة الخصوصية هذه بما يتوافق مع الأحكام القانونية. وسنقوم بإعلامك بأي تغييرات مهمة.
-
-المعلومات الشخصية
-
-يقوم تطبيق وترميلون بجمع معلومات شخصية للمستخدم من خلال تسجيله بالتطبيق، وأثناء اتصال فريق عمل وترميلون بالعميل، وعند إجراء استبيان عن الخدمة بعد تنفيذها، وعبر شبكات التواصل الاجتماعي المختلفة، وقد يقوم التطبيق بجمع معلومات اخرى عن العميل من طرق مستحدثة قد يتم عملها مستقبلا..
-
-المعلومات غير شخصية
-
-يقوم تطبيق وترميلون بجمع معلومات شاملة غير شخصية عن المستخدمين، تحدد أماكن تواجدهم والاجهزة المستخدمة والأعمار والجنس، وغيرها من المعلومات التي تحتاجها إدارة التطبيق لتتمكن من تحليل الأداء واتخاذ القرارات المناسبة.
-
-ما الغرض من هذه المعلومات؟
-
-يستفيد تطبيق وترميلون من هذه المعلومات للأغراض التالية:
-
-تحسين تجربة العميل
-
-تساعدنا المعلومات التي نقوم بجمعها على تحسين تجربة العميل في النسخ القادمة من التطوير، لتحقيق أعلى درجات السهولة والراحة اثناء استخدام التطبيق.
-
-التطويرات المستقبلية
-
-عند اجراء اي تحديث للتطبيق فإننا نستند إلى المعلومات التي قمنا بجمعها من العملاء السابقين لتطبيق وترميلون.
-
-قياس رضى العميل
-
-تمكننا المعلومات من قياس مدى رضى العملاء عن خدمات وترميلون، وبالتالي تقديم مستويات اعلى من الخدمة في التطويرات القادمة.
-
-هل معلوماتي الشخصية مؤمنة؟
-
-يلتزم تطبيق وترميلون بتقديم أعلى مستويات الأمان للمعلومات الشخصية المفصح عنها من قبل العميل، وذلك عبر عدم إفشائها لأي طرف آخر إلا بعد موافقة العميل.
-
-مشاركة بياناتي الشخصية
-
-تطبيق وترميلون لا يقوم بمشاركة المعلومات الشخصية الخاصة بأي عميل بشكل عام. فقط نقوم بمشاركة الاحصائيات العامة التي تتعلق بحجم السوق وقطاعاته وشرائح العملاء.
-
-تغيير سياسة الخصوصية
-
-نقوم في تطبيق وترميلون بتحديث سياسة الخصوصية باستمرار، ولذلك فإننا نحث عملائنا على متابعة تحديثات سياسة الخصوصية بشكل مستمر.
-
-
-            </p> */}
-                </div>
+                <EmbededComponent url={joinUscontactForm} />
+                
               </div>
             </div>
           </div>

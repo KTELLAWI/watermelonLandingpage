@@ -1,18 +1,9 @@
 import {
-  people01,
-  people02,
-  people03,
+ 
   facebook,
   instagram,
   linkedin,
   twitter,
-  airbnb,
-  binance,
-  coinbase,
-  dropbox,
-  send,
-  shield,
-  star,
   person,
   rose,
   homeshope,
@@ -23,14 +14,18 @@ import {
   location,
   email
 } from "../../public";
-export const  contactForm :string = "https://woocommerce-1184222-4160210.cloudwaysapps.com/form";
-export const  employmentForm :string = "https://woocommerce-1184222-4160210.cloudwaysapps.com/watermelonemploymentrequest/";
-export const  joinUscontactForm :string = "https://woocommerce-1184222-4160210.cloudwaysapps.com/watermelonjoinus/";
-export const  privacyPage :string ="https://woocommerce-1184222-4160210.cloudwaysapps.com/privacy/";
+
+
+
+
+
+
 export const encontacForm = "https://woocommerce-1184222-4160210.cloudwaysapps.com/en/form_en/";
 export const enemploymentForm = "https://woocommerce-1184222-4160210.cloudwaysapps.com/en/watermelonemploymentrequest_en";
 export const enjoinusForm ="https://woocommerce-1184222-4160210.cloudwaysapps.com/en/watermelonjoinus_en";
 export const enprivacyPage = "https://woocommerce-1184222-4160210.cloudwaysapps.com/en/2024/01/06/privacy/";
+export const entermsPage = "https://woocommerce-1184222-4160210.cloudwaysapps.com/en/2024/01/06/privacy/";
+
 
 export const applestoreUrl ="https://apps.apple.com/us/app/watermelon-%D9%88%D8%AA%D8%B1%D9%85%D9%8A%D9%84%D9%88%D9%86/id1593303723";
 export const googleplayStoreUrl ="https://apps.apple.com/us/app/watermelon-%D9%88%D8%AA%D8%B1%D9%85%D9%8A%D9%84%D9%88%D9%86/id1593303723";
@@ -59,6 +54,47 @@ export const enFaqs = [
   {
     title: 'How can I update my account information?',
     contents: 'You can update your account information by logging into your account and navigating to the "Account Settings" page.',
+  },
+];
+
+// arabic Contents
+export const CompanyNameFirstpart :string = "وتر";
+export const CompanyNameSecondpart :string = "ميلون";
+export const HeroDescription :string = "قوِّي عملك، وجمِّع خدماتك - وترميلون، المنصة الرقمية المخصصة لأصحاب المتاجر ومقدمي الخدمات";
+export const AboutusDescription = "وترميلون منصة إلكترونية هدفها جميع أصحاب المتاجر ومقدمي الخدمات في مكانٍ واحد،يتمكنون من خلالها إضافة خدماتهم وإنشاء صفحات خاصة بها، بحيث تصبح بمثابة متجر إلكتروني متكامل لهم، فمن التسجيل على المنصة تصبح لديهم صفحة خاصة تتضمن رفع الخدمات أو المنتجات";
+export const testimonilasheadertitle = "لا تكتفي بأخذ كلمتنا فقط، بل قم بالتحقق بنفسك واستكشاف المزيد......";
+export const CTATitle = "انضم إلينا وكُن جزءًا من رواد السوق الرقمي، حيث نقدم لك الفرصة للابتكار والتحول. ";
+export const DownloadAppDescriptoption = "اكتشف الإمكانيات - قم بالتحميل الآن لتجربة الميزات السلسة لتطبيقنا";
+export const footerunderlogoTitle = "المنصة الرقمية المخصصة لأصحاب المتاجر ومقدمي الخدمات";
+
+export const  contactForm :string = "https://woocommerce-1184222-4160210.cloudwaysapps.com/form";
+export const  employmentForm :string = "https://woocommerce-1184222-4160210.cloudwaysapps.com/watermelonemploymentrequest/";
+export const  joinUscontactForm :string = "https://woocommerce-1184222-4160210.cloudwaysapps.com/watermelonjoinus/";
+export const  privacyPage :string ="https://woocommerce-1184222-4160210.cloudwaysapps.com/privacy/";
+export const  termsPage :string ="https://woocommerce-1184222-4160210.cloudwaysapps.com/privacy/";
+
+
+
+
+
+
+
+export const faqs = [
+  {
+    title: 'كيف يمكنني إضافة منتج إلى سلة التسوق؟',
+    contents: 'يمكنك إضافة منتج إلى سلة التسوق عن طريق النقر على زر "إضافة إلى السلة" الموجود بجوار المنتج في صفحة المنتج.',
+  },
+  {
+    title: 'كيف يمكنني تتبع طلبيتي؟',
+    contents: 'يمكنك تتبع طلبيتك بعد تسجيل الدخول إلى حسابك. انتقل إلى قسم "طلباتي" لرؤية حالة الطلب وتفاصيل التتبع.',
+  },
+  {
+    title: 'هل يمكنني إعادة المنتج إذا لم يعجبني؟',
+    contents: 'نعم، يمكنك إعادة المنتج إذا لم يعجبك وفقًا لسياسة الإرجاع. اتصل بخدمة العملاء لمزيد من المساعدة.',
+  },
+  {
+    title: 'كيف يمكنني تحديث معلومات حسابي؟',
+    contents: 'يمكنك تحديث معلومات حسابك عن طريق الدخول إلى حسابك والانتقال إلى صفحة "إعدادات الحساب".',
   },
 ];
 
@@ -131,7 +167,7 @@ export const enavLinks = [
 ];
 
 
-export const features = [
+export const aboutfeatures = [
   {
     id: "feature-1",
     icon: person, // Assuming you have a 'person' variable defined
@@ -181,7 +217,7 @@ export const enAboutfeatures = [
   },
 ];
 
-export const features2 = [
+export const features = [
   {
     id: "feature-1",
     icon: payments, // Assuming you have a 'person' variable defined
@@ -231,32 +267,7 @@ export const enFeatures = [
   },
 ];
 
-export const feedback = [
-  {
-    id: "feedback-1",
-    content:
-      "التطبيق جميل جدا وأصبح اساسيا في حياتي",
-    name: "أحمد",
-    title: "طالب جامعي",
-    img: people01,
-  },
-  {
-    id: "feedback-2",
-    content:
-      "التطبيق جميل جدا وأصبح اساسيا في حياتي",
-    name: "أحمد",
-    title: "طالب جامعي",
-    img: people01,
-  },
-  {
-    id: "feedback-3",
-    content:
-      "التطبيق جميل جدا وأصبح اساسيا في حياتي",
-    name: "أحمد",
-    title: "طالب جامعي",
-    img: people01,
-  },
-];
+
 export const enfeedback = [
   {
     id: "feedback-1",
@@ -264,7 +275,7 @@ export const enfeedback = [
       "Nice App and nice experience",
       author: "Ahmat",
     title: "",
-    img: people01,
+    img: "",
   },
   {
     id: "feedback-1",
@@ -272,7 +283,7 @@ export const enfeedback = [
       "Nice App and nice experience",
       author: "Ahmat",
     title: "",
-    img: people01,
+    img: "",
   },
   {
     id: "feedback-1",
@@ -280,11 +291,37 @@ export const enfeedback = [
       "Nice App and nice experience",
       author: "Ahmat",
     title: "",
-    img: people01,
+    img: "",
   },
 ];
 
-
+export const feedback = [
+  {
+    id: "feedback-1",
+    quote:
+      "التطبيق جميل جدا وأصبح اساسيا في حياتي",
+      author: "أحمد",
+    title: "طالب جامعي",
+    img: "",
+  },
+  {
+    id: "feedback-2",
+    quote:
+    "التطبيق جميل جدا وأصبح اساسيا في حياتي",
+    author: "أحمد",
+  title: "طالب جامعي",
+  img: "",
+  },
+  {
+    id: "feedback-3",
+    quote:
+      "التطبيق جميل جدا وأصبح اساسيا في حياتي",
+      author: "أحمد",
+    title: "طالب جامعي",
+    img: "",
+  },
+    // Add more slide data as needed
+  ];
 
 export const footerLinks = [
   {
@@ -454,43 +491,3 @@ export const socialMedia = [
   },
 ];
 
-export const stats = [
-  {
-    id: "stats-1",
-    title: "User Active",
-    value: "3800+",
-  },
-  {
-    id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
-  },
-  {
-    id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
-  },
-];
-
-export const clients = [
-  {
-    id: "client-1",
-    logo: airbnb,
-    bgImg: "../assets/airbnb-small.png"
-  },
-  {
-    id: "client-2",
-    logo: binance,
-    bgImg: "../assets/binance-small.png"
-  },
-  {
-    id: "client-3",
-    logo: coinbase,
-    bgImg: "../assets/binance-small.png"
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
-    bgImg: "../assets/dropbox-small.png"
-  },
-];
