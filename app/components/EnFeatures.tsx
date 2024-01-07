@@ -2,9 +2,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn, slideIn } from "../styles/animations";
-import { enFeatures, features2 } from "../constants";
-import Button from "./Button";
-import { demo } from "@/public";
+import { enFeatures } from "../constants";
+
 
 // interface featureCardProps {
 //     icon: string;

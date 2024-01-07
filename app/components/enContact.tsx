@@ -1,5 +1,5 @@
 "use client";
-import { apple, bill, billing1, contact, google } from "../../public";
+import { apple, contact, google } from "../../public";
 import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";

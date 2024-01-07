@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Button from "./Button";
 import Image from "next/image";
 import { menu,close, logoWhite } from "@/public";
 import { enCTATitle } from "../constants";

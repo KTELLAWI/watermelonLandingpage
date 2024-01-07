@@ -2,8 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { slideIn } from "../styles/animations";
-import { apple, back2, discount, googlewhite, imageshaper, robot, robot2 } from "../../public";
-import GetStarted from "./GetStarted";
+import { apple, back2, googlewhite, imageshaper, robot2 } from "../../public";
 import { applestoreUrl, enHeroDescription, googleplayStoreUrl } from "../constants";
 import Link from "next/link";
 
