@@ -11,7 +11,7 @@ const Hero = () => {
     <section id="home" className="flex md:flex-row flex-col paddingY creativebanner relative w-full">
       <div className="w-full h-full absolute  z-100 bottom-0 top-0 creativebanner">
         <Image
-          src="https://i.imgur.com/ksnAJnZ.png" //{imageshaper}
+          src="/homeshape.png" //{imageshaper}
           alt=""
           width={0}
           height={0}
@@ -82,7 +82,7 @@ const Hero = () => {
       >
         <div className="relative w-[110%] h-[110%]">
           <Image
-            src="https://i.imgur.com/Jhip2sW.png"//{back2}
+            src="/back2.png"//{back2}
             alt=""
             width={0}
             height={0}
@@ -93,7 +93,7 @@ const Hero = () => {
             priority={true}
           />
           <Image
-            src="https://i.imgur.com/mKZsyUj.png"//{robot2}
+            src="/robot.png"//{robot2}
             width={0}
             height={0}
             layout="fill"
