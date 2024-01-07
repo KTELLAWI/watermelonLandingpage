@@ -15,6 +15,7 @@ const Hero = () => {
           alt=""
           width={0}
           height={0}
+          layout="fill"
           className="w-[100%] h-[100%] z-0 "
         />
       </div>
@@ -79,17 +80,27 @@ const Hero = () => {
         whileInView="show"
         viewport={{ once: true }}
       >
-        <div className="relative">
+        <div className="relative w-[110%] h-[110%]">
           <Image
             src="https://i.imgur.com/Jhip2sW.png"//{back2}
-            alt="billing"
-            className="absolute top-0  w-[90%] h-full spinnerimage"
+            alt=""
+            width={0}
+            height={0}
+            layout="fill"
+            objectFit="contain"
+
+            className="absolute top-0   spinnerimage"
             priority={true}
           />
           <Image
             src="https://i.imgur.com/mKZsyUj.png"//{robot2}
-            alt="billing"
-            className="  w-[90%] h-[90%] z-100"
+            width={0}
+            height={0}
+            layout="fill"
+            objectFit="contain"
+
+            alt=""
+            className="   z-100"
             priority={true}
           />
         </div>        {/* <Image
