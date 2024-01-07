@@ -15,8 +15,8 @@ const Contact = () => (
       viewport={{ once: true }}
     >
       {/* <Image
-        src={billing1}
-        alt="billing"
+        src={}
+        alt=""
         width={0}
         height={0}
         className="w-[100%] h-[100%] relative z-[5]"
@@ -55,7 +55,7 @@ const Contact = () => (
       </p> */}
       <Image
         src={contact}
-        alt="billing"
+        alt=""
         width={0}
         height={0}
         className="w-[75%] h-[80%]  z-[5]"

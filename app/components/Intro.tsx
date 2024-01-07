@@ -22,7 +22,7 @@ const Intro = () => {
           <div className="box">
           <Image
         src={logowhitew}
-        alt="billing"
+        alt=""
         width={100}
         height={150}
         className="w-[90%] h-[90%] relative z-[5]"

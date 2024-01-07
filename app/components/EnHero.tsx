@@ -12,7 +12,7 @@ const EnHero = () => {
       <div className="w-full h-full absolute  z-100 bottom-0 top-0 creativebanner">
       <Image
         src={imageshaper}
-        alt="billing" 
+        alt="" 
         width={0}
         height={0}
         className="w-[100%] h-[100%] z-0 "
@@ -63,7 +63,7 @@ const EnHero = () => {
         <Link href={googleplayStoreUrl}>
         <Image
         src={googlewhite}
-        alt="billing"
+        alt=""
         width={0}
         height={0}
         className="w-[100%] h-[100%] mr-5 z-[5]"
@@ -82,30 +82,19 @@ const EnHero = () => {
  <div className="relative">
     <Image
       src={back2}
-      alt="billing"
+      alt=""
       className="absolute top-0  w-[90%] h-full spinnerimage"
       priority={true}
     />
     <Image
       src={robot2}
-      alt="billing"
+      alt=""
       className="  w-[90%] h-[90%] z-100"
       priority={true}
     />
-  </div>        {/* <Image
-          src={robot2}
-          alt="billing"
-          width={0}
-          height={0}
-          className="sm:w-[70%] w-[75%] sm:h-[100%] h-[75%] relative z-[5]"
-          priority={true}
-        /> */}
+  </div>       
 
-        {/* gradient start */}
-        {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" /> */}
-        {/* <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" /> */}
-        {/* <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" /> */}
-        {/* gradient end */}
+       
       </motion.div>
 
       <div className="ss:hidden flexCenter">

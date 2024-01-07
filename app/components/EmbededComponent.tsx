@@ -16,8 +16,8 @@ const EmbededComponent = ({ url }: {
     viewport={{ once: true }}
   >
     {/* <Image
-        src={billing1}
-        alt="billing"
+        src={}
+        alt=""
         width={0}
         height={0}
         className="w-[100%] h-[100%] relative z-[5]"

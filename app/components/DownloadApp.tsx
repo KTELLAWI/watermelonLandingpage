@@ -16,7 +16,7 @@ const DownloadApp = () => (
     >
       <Image
         src={downloadApp}
-        alt="billing"
+        alt=""
         width={0}
         height={0}
         className="w-[80%] h-[90%] relative z-[5]"
