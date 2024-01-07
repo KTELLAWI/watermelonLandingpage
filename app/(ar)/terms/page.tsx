@@ -16,7 +16,7 @@ import Services from "../../components/Aboutus";
 import Slider from "../../components/TestimonialSlider";
 import { logowhitew } from "@/public";
 import ContactForm from "../../components/EmbededComponent";
-import { termPage, termsPage } from "@/app/constants";
+import { termsPage } from "@/app/constants";
 import EmbededComponent from "../../components/EmbededComponent";
 
 export default function Home() {
