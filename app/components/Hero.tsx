@@ -15,7 +15,6 @@ const Hero = () => {
           alt=""
           width={0}
           height={0}
-          layout="fill"
           className="w-[100%] h-[100%] z-0 "
         />
       </div>

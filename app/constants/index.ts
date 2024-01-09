@@ -23,8 +23,8 @@ import {
 export const encontacForm = "https://woocommerce-1184222-4160210.cloudwaysapps.com/en/form_en/";
 export const enemploymentForm = "https://woocommerce-1184222-4160210.cloudwaysapps.com/en/watermelonemploymentrequest_en";
 export const enjoinusForm ="https://woocommerce-1184222-4160210.cloudwaysapps.com/en/watermelonjoinus_en";
-export const enprivacyPage = "https://woocommerce-1184222-4160210.cloudwaysapps.com/en/2024/01/06/privacy/";
-export const entermsPage = "https://woocommerce-1184222-4160210.cloudwaysapps.com/en/2024/01/06/privacy/";
+export const enprivacyPage = "https://woocommerce-1184222-4160210.cloudwaysapps.com/en/privacypolicy/";
+export const entermsPage = "https://woocommerce-1184222-4160210.cloudwaysapps.com/en/terms-2/";
 
 
 export const applestoreUrl ="https://apps.apple.com/us/app/watermelon-%D9%88%D8%AA%D8%B1%D9%85%D9%8A%D9%84%D9%88%D9%86/id1593303723";
@@ -70,8 +70,8 @@ export const footerunderlogoTitle = "المنصة الرقمية المخصصة 
 export const  contactForm :string = "https://woocommerce-1184222-4160210.cloudwaysapps.com/form";
 export const  employmentForm :string = "https://woocommerce-1184222-4160210.cloudwaysapps.com/watermelonemploymentrequest/";
 export const  joinUscontactForm :string = "https://woocommerce-1184222-4160210.cloudwaysapps.com/watermelonjoinus/";
-export const  privacyPage :string ="https://woocommerce-1184222-4160210.cloudwaysapps.com/privacy/";
-export const  termsPage :string ="https://woocommerce-1184222-4160210.cloudwaysapps.com/privacy/";
+export const  privacyPage :string ="https://woocommerce-1184222-4160210.cloudwaysapps.com/arabicprivacy/";
+export const  termsPage :string ="https://woocommerce-1184222-4160210.cloudwaysapps.com/terms";
 
 
 

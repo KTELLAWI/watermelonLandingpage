@@ -29,7 +29,7 @@ const Contact = () => (
 
 
         src={contactForm}
-        style={{ minWidth: '100%', maxWidth: '100%', height: '450px', border: 'none' }}
+        style={{ minWidth: '100%', maxWidth: '100%', height: '480px', border: 'none' }}
       // Enable scrolling
       ></iframe>
 

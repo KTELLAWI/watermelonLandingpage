@@ -30,7 +30,7 @@ const EmbededComponent = ({ url }: {
 
 
       src={url}
-      style={{ minWidth: '100%', maxWidth: '100%', height: '650px', border: 'none' }}
+      style={{ minWidth: '100%', maxWidth: '100%', height: '800px', border: 'none' }}
     // Enable scrolling
     ></iframe>
 
