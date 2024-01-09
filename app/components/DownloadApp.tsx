@@ -41,13 +41,13 @@ const DownloadApp = () => (
       <p className="paragraph max-w-[470px] mt-5 text-black " dir="rtl" >
       {DownloadAppDescriptoption}
       </p>
-      <Image
+      {/* <Image
           src={qrcode}
           alt="google_play"
           width={128.86}
           height={42.05}
           className="object-contain mr-5 cursor-pointer"
-        />
+        /> */}
 
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
         <a href={applestoreUrl}>
