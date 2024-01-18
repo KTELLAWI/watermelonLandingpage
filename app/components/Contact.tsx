@@ -4,6 +4,7 @@ import { slideIn } from "../styles/animations";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { contactForm } from "../constants";
+import ContactForm from "./ContactForm";
 
 const Contact = () => (
   <section id="contact" className="sectionReverse shadow-lg py-auto  rounded-lg border-primaryOne border-t-8 border-b-8">
@@ -21,7 +22,7 @@ const Contact = () => (
         height={0}
         className="w-[100%] h-[100%] relative z-[5]"
       /> */}
-      <iframe
+      {/* <iframe
 
         id="JotFormIFrame"
         title="Appointment Request Form"
@@ -31,7 +32,8 @@ const Contact = () => (
         src={contactForm}
         style={{ minWidth: '100%', maxWidth: '100%', height: '480px', border: 'none' }}
       // Enable scrolling
-      ></iframe>
+      ></iframe> */}
+      <ContactForm/>
 
       {/* gradient start */}
       {/* <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" /> */}

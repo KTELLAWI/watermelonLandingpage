@@ -22,7 +22,50 @@
 h1 {
   font-family: var(--font-tajawal);
 }
+.custom-input {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  border-bottom-color: #0F9887;
+  border-top-color: #0F9887;
+  border-bottom-width: 2px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.custom-input:focus {
+  border-color: #F5F5F5 !important;
+  outline: none !important; 
+  
+}
 
+.submitbutton{
+  border-radius: 10px;
+                /* 	border-bottom:0px; */
+                border-bottom-color: #0F9887;
+                border-top-color: #0F9887;
+                border-bottom-width: 2px;
+                border-top-width: 0px;
+                border-left-width: 0px;
+                border-right-width: 0px;
+                background-color: transparent;
+                font-size: 18px !important;
+                width:70%;
+                display: block !important;
+                line-height: 0 !important;
+                background-color: #0f9887;
+                color: #F5F5F5;
+                padding : auto !important;
+                 margin: 0 auto !important;
+                text-align: center !important;
+                text-transform: uppercase;
+
+}
+.submitbutton:hover{
+  background-color: #D31152;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
 /* service */
 .process-item {
   position: relative;
